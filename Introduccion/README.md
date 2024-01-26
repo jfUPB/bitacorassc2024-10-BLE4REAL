@@ -16,5 +16,4 @@ se utilizo un cpu emulator de cpu y se agrego un codigo, dicho codigo hace un lo
 
 posteriormente se hizo un cambio para que el loop fuera de la 5 a la 14 (al pulsar una tecla el cuadro blanco a la derecha se colocaba de un color negro)
 
-[![2.png](https://i.postimg.cc/jq6Tc7pR/2.png)](https://postimg.cc/BtvRQXZz)
-
+[![2.png](https://i.postimg.cc/J4p4MX4R/2.png)](https://postimg.cc/4mhT1m90)
