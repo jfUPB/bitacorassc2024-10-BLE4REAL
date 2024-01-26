@@ -6,3 +6,15 @@ El curso se divide en cuatro unidades, con una metodología de aula invertida. S
 Se realizará una evaluación formativa cada semana con actividades y preguntas guía. La evaluación sumativa considerará el proceso observado en la bitácora de aprendizaje.
 
 La asistencia y el trabajo independiente son obligatorios. Cada sesión tiene una duración de 1 hora 40 minutos, y se espera una dedicación de 6 horas por semana.
+
+# segunnda clase semana 1
+
+se hizo un ejercicio con nan2tetris donde se buscaba comprender el funcionamiento y lenguaje que se va a utilizar. La actividad estaba guiada en pasos que habia que seguir y se tenia que detallar el cambio que habia en los codigos
+
+se utilizo un cpu emulator de cpu y se agrego un codigo, dicho codigo hace un loop de la linea 4 a la 13, dicho loop se indica con un (@4)
+[url=https://postimg.cc/BtvRQXZz][img]https://i.postimg.cc/BtvRQXZz/2.png[/img][/url]
+
+posteriormente se hizo un cambio para que el loop fuera de la 5 a la 14 (al pulsar una tecla el cuadro blanco a la derecha se colocaba de un color negro)
+
+[url=https://postimg.cc/NLPSyB5j][img]https://i.postimg.cc/NLPSyB5j/Captura-de-pantalla-2024-01-25-205618.png[/img][/url]
+
