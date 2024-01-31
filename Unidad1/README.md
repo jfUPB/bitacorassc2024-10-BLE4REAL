@@ -11,7 +11,7 @@ Se puede simplificar operaciones mas complejas mediante leyes
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Sesion en casa video 8:
+#Sesion en casa video 7:
 
 explica cómo las funciones booleanas se utilizan en la informática para representar y manipular información. También habla sobre cómo se pueden utilizar las funciones booleanas para construir circuitos lógicos y cómo se pueden utilizar para crear programas de computadora.
 
@@ -30,3 +30,24 @@ se distinguieron algunos teoremas, uno de ellos es que se pueden hacer todo tipo
 por ultimo se hizo la tabla de valores que se solicitaba en la seccion de preguntas de la unidad 1 
 
 [![VIDEO-7.png](https://i.postimg.cc/YCYH38dr/VIDEO-7.png)](https://postimg.cc/DSvHfQVH)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Sesion de trabajo en clase video 8:
+
+Como se implementan las funciones booleanas usando hardware (gate logic) es un chip definido para ofrecer una funcion. Como nand. Hay 3 puertas  (and gate, or gate, not gate) estan diseñadas para obtener valores booleanos
+
+[![1.png](https://i.postimg.cc/DwWdtVXS/1.png)](https://postimg.cc/nXJDDPTx)
+
+Dicho circuito puede tener varias entradas pero una unica salida. 
+
+[![Captura-de-pantalla-2024-01-31-144518.png](https://i.postimg.cc/qqM2wWrM/Captura-de-pantalla-2024-01-31-144518.png)](https://postimg.cc/bDWGNCdK)
+
+Para 3 tipos de entradas se puede hacer un diseño con 2 puertas y una salida
+
+[![Captura-de-pantalla-2024-01-31-145410.png](https://i.postimg.cc/ZKXyvWWq/Captura-de-pantalla-2024-01-31-145410.png)](https://postimg.cc/SJ7KwN70)
+
+
+
+
+
