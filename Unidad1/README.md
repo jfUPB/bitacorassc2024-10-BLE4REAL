@@ -8,3 +8,25 @@ explican los conceptos básicos de la lógica booleana y cómo se puede utilizar
 Se puede simplificar operaciones mas complejas mediante leyes 
 
 [![Captura-de-pantalla-2024-01-29-152708.png](https://i.postimg.cc/sDShggXr/Captura-de-pantalla-2024-01-29-152708.png)](https://postimg.cc/KRGz9FBq)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Sesion en casa video 8:
+
+explica cómo las funciones booleanas se utilizan en la informática para representar y manipular información. También habla sobre cómo se pueden utilizar las funciones booleanas para construir circuitos lógicos y cómo se pueden utilizar para crear programas de computadora.
+
+se aprende que por medio de tablas de valores se puedan contruir operaciones para determinar el valor de la funcion
+
+[![PRIMERA.png](https://i.postimg.cc/J4tp5gYJ/PRIMERA.png)](https://postimg.cc/VdQ9Y78L)
+
+tambien se puede observar una tabla de equivalencia con operaciones similares
+
+[![segunda.png](https://i.postimg.cc/3JkpdHWy/segunda.png)](https://postimg.cc/kBdDpzQ9)
+
+se distinguieron algunos teoremas, uno de ellos es que se pueden hacer todo tipo de funciones solo con (not y and), mas adelante en el video se mostro otro teorema el cual dice que nand tambien es una alternativa para hacer todo tipo de operaciones
+
+[![3.png](https://i.postimg.cc/rpMNdYvv/3.png)](https://postimg.cc/0zXwFZ5f)
+
+por ultimo se hizo la tabla de valores que se solicitaba en la seccion de preguntas de la unidad 1 
+
+[![VIDEO-7.png](https://i.postimg.cc/YCYH38dr/VIDEO-7.png)](https://postimg.cc/DSvHfQVH)
