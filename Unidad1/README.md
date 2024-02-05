@@ -11,7 +11,7 @@ Se puede simplificar operaciones mas complejas mediante leyes
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Sesion en casa video 7:
+# Sesion en casa video 7:
 
 explica cómo las funciones booleanas se utilizan en la informática para representar y manipular información. También habla sobre cómo se pueden utilizar las funciones booleanas para construir circuitos lógicos y cómo se pueden utilizar para crear programas de computadora.
 
@@ -33,7 +33,7 @@ por ultimo se hizo la tabla de valores que se solicitaba en la seccion de pregun
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Sesion de trabajo en clase video 8:
+# Sesion de trabajo en clase video 8:
 
 Como se implementan las funciones booleanas usando hardware (gate logic) es un chip definido para ofrecer una funcion. Como nand. Hay 3 puertas  (and gate, or gate, not gate) estan diseñadas para obtener valores booleanos
 
@@ -47,7 +47,13 @@ Para 3 tipos de entradas se puede hacer un diseño con 2 puertas y una salida
 
 [![Captura-de-pantalla-2024-01-31-145410.png](https://i.postimg.cc/ZKXyvWWq/Captura-de-pantalla-2024-01-31-145410.png)](https://postimg.cc/SJ7KwN70)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Sesion de clase SEMANA 3:
 
+se realizo una actividad de circuitos logicos en donde mediante operaciones matematicas basicas se obtienen valores y estos se pueden usar para sumadores, latch y write. para los primeros puzzles habia que hacer operaciones basicas, posteriormente en las siguientes actividades se necesito usar una metodologia llamada ingenieria inversa. La ingenieria inversa se basa en tener una resolucion de problemas de atras hacia adelante
 
+[![Imagen-de-Whats-App-2024-02-05-a-las-15-26-26-7bcbdd51.jpg](https://i.postimg.cc/GmPY8ZvX/Imagen-de-Whats-App-2024-02-05-a-las-15-26-26-7bcbdd51.jpg)](https://postimg.cc/TKwhBN7b)
+
+este circuito sintetiza lo que es en si el circuito que opera en las computadoas
 
