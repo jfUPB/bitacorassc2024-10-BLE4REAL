@@ -3,8 +3,12 @@
 ## SEMANA 2
 
 ### sesion 1: lunes 29 enero
+
+#### micro sesion 1
 En el video numero 6:
 explican los conceptos básicos de la lógica booleana y cómo se puede utilizar para construir circuitos lógicos. Comienzan explicando los conceptos de verdad y falsedad, y cómo se pueden combinar para formar operaciones booleanas como AND, OR y NOT. Luego, muestran cómo se pueden utilizar estas operaciones para construir circuitos lógicos simples, como un sumador binario de un bit. También explican cómo se pueden utilizar las operaciones booleanas para construir circuitos más complejos.
+
+#### micro sesion 2
 
 [![Captura-de-pantalla-2024-01-29-144635.png](https://i.postimg.cc/DybzPpkd/Captura-de-pantalla-2024-01-29-144635.png)](https://postimg.cc/MvqxWDGv)
 
@@ -12,8 +16,13 @@ Se puede simplificar operaciones mas complejas mediante leyes
 
 [![Captura-de-pantalla-2024-01-29-152708.png](https://i.postimg.cc/sDShggXr/Captura-de-pantalla-2024-01-29-152708.png)](https://postimg.cc/KRGz9FBq)
 
+#### micro sesion 3
+
+explica los fundamentos de la lógica booleana, destacando los conceptos de verdad y falsedad, así como las operaciones básicas como AND, OR y NOT. Se destaca la forma en que estos conceptos se combinan para construir circuitos lógicos, empezando desde operaciones simples hasta llegar a circuitos más complejos, como un sumador binario de un bit. En general, la conclusión es que la lógica booleana proporciona las bases teóricas para el diseño y construcción de circuitos lógicos en electrónica digital, permitiendo la implementación de diversas funciones y operaciones mediante la combinación de las operaciones booleanas básicas.
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-### sesion autonoma 2: miercoles 31 enero
+### sesion 2: miercoles 31 enero
 
 explica cómo las funciones booleanas se utilizan en la informática para representar y manipular información. También habla sobre cómo se pueden utilizar las funciones booleanas para construir circuitos lógicos y cómo se pueden utilizar para crear programas de computadora.
 
@@ -60,9 +69,33 @@ se realizo una actividad de circuitos logicos en donde mediante operaciones mate
 [![Imagen-de-Whats-App-2024-02-05-a-las-15-26-26-7bcbdd51.jpg](https://i.postimg.cc/GmPY8ZvX/Imagen-de-Whats-App-2024-02-05-a-las-15-26-26-7bcbdd51.jpg)](https://postimg.cc/TKwhBN7b)
 
 este circuito sintetiza lo que es en si el circuito que opera en las computadoas
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### sesion 2: miercoles 7 febrero
+
+#### micro sesion 1:
 
 revisar la estructura de la bitacora
 revision de los puntos
 realizar el ensamblador
+
+se explica cómo los bits se utilizan en la computación para representar y almacenar datos. Un bit puede tener dos valores posibles: 0 o 1, que corresponden a apagado o encendido. Estos valores binarios se utilizan para representar números y otros datos en las computadoras.
+
+#### micro sesion 2
+En el caso específico de un computador de 8 bits, podemos calcular cuántos números diferentes puede representar. Cada bit tiene dos opciones (0 o 1), y al tener 8 bits, multiplicamos estas opciones juntas: 2^8 = 256
+
+[![Captura-de-pantalla-2024-02-07-143335.png](https://i.postimg.cc/rFB80zRW/Captura-de-pantalla-2024-02-07-143335.png)](https://postimg.cc/SJG0HSrN)
+
+#### microsesion 3
+
+Por lo tanto, un computador de 8 bits puede representar 256 números diferentes123. Estos números incluyen tanto valores positivos como negativos, y el rango va desde -128 hasta 1274. Es importante tener en cuenta que esta capacidad de representación es fundamental en la programación.
+
+un computador de 8 bits puede manejar 256 combinaciones únicas de valores binarios, lo que permite representar una variedad de números en su formato binario.
+
+#### microsesion 3:
+en las operaciones de salto, si se pone "000" no salt, en el caso que haya alguna variabilidad de valores entre 1 y 0 se producira un efecto
+operaciones de salto: esto hace que en el cpu se puedan dar desplazamientos hacia distintas lineas de numeros
+
+
+
