@@ -12,7 +12,8 @@ Se puede simplificar operaciones mas complejas mediante leyes
 
 [![Captura-de-pantalla-2024-01-29-152708.png](https://i.postimg.cc/sDShggXr/Captura-de-pantalla-2024-01-29-152708.png)](https://postimg.cc/KRGz9FBq)
 
------------------------------------------------------------------------------------------------------------------------------------------------------------### sesion 2: miercoles 31 enero
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+### sesion autonoma 2: miercoles 31 enero
 
 explica cómo las funciones booleanas se utilizan en la informática para representar y manipular información. También habla sobre cómo se pueden utilizar las funciones booleanas para construir circuitos lógicos y cómo se pueden utilizar para crear programas de computadora.
 
@@ -34,7 +35,7 @@ por ultimo se hizo la tabla de valores que se solicitaba en la seccion de pregun
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### sesion 3:
+### sesion 3: miercoles 31 enero
 
 Como se implementan las funciones booleanas usando hardware (gate logic) es un chip definido para ofrecer una funcion. Como nand. Hay 3 puertas  (and gate, or gate, not gate) estan diseñadas para obtener valores booleanos
 
