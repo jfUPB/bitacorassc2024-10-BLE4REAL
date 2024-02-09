@@ -162,16 +162,27 @@ Magnitud del número: Los restantes bits representan la magnitud del número en 
 Complemento a dos: Para obtener el complemento a dos de un número negativo, primero encontramos el complemento a uno (invertimos todos los bits) y luego sumamos 1 al resultado.
 
 0	0000	0000
+
 1	0001	0001
+
 2	0010	0010
+
 3	0011	0011
+
 4	0100	0100
+
 5	0101	0101
+
 6	0110	0110
+
 7	0111	0111
+
 -1	-	1111
+
 -2	-	1110
+
 -3	-	1101
+
 -4	-	1100
 
 #### micro sesion 3
@@ -180,9 +191,42 @@ Se aborda la Unidad Aritmética Lógica (ALU).
 
 Es un componente fundamental de muchos tipos de circuitos informáticos, incluyendo la Unidad Central de Procesamiento (CPU) de las computadoras, las Unidades de Punto Flotante (FPU) y las Unidades de Procesamiento Gráfico (GPU)
 
-Si una función específica no está implementada en la ALU, hay varias opciones:
+Si una función específica no está implementada en la ALU
+
 Microprogramación: Se puede diseñar una microinstrucción específica para realizar la función deseada. Esto implica programar una secuencia de operaciones más básicas dentro de la ALU para lograr el resultado deseado.
+
 Instrucciones de software: En lugar de realizar la operación directamente en la ALU, se puede ejecutar una instrucción de software específica en el procesador. El software puede proporcionar la funcionalidad requerida sin depender exclusivamente de la ALU.
+
 Instrucciones de coprocesador: Algunas operaciones especializadas, como funciones matemáticas complejas o manipulación de cadenas, pueden ser manejadas por coprocesadores específicos (como la FPU). Estos coprocesadores trabajan junto con la ALU para extender las capacidades del procesador.
 
+si una ALU no puede multiplicar directamente, se pueden implementar algoritmos de multiplicación en software para lograr el resultado
+
 #### micro sesion 4
+
+Lógica Combinacional:
+
+Un circuito combinacional es aquel en el que la salida depende exclusivamente de sus entradas. No almacena información y su respuesta es instantánea.
+
+Lógica Secuencial:
+ Los circuitos secuenciales son más complejos. Además de las entradas, también dependen de su estado anterior y, a veces, de un pulso de reloj.
+
+ La lógica combinacional y secuencial se complementan en la construcción de computadoras:
+
+La lógica combinacional realiza operaciones básicas.
+La lógica secuencial agrega memoria y permite almacenar y procesar datos a lo largo del tiempo.
+
+Un ejemplo simple es un registro de desplazamiento. Imagina un registro de 4 bits que puede cargar y desplazar datos a la derecha. Aquí está su funcionamiento:
+
+Carga de Datos:
+Inicialmente, el registro está en estado 0 (CLR = 0).
+Cada pulso de reloj (CLK) captura el dato de entrada (D) en cada biestable.
+Por ejemplo, cargamos la palabra 0101.
+
+Desplazamiento:
+Los datos se desplazan a la derecha con cada pulso de reloj.
+Después de 4 pulsos, la palabra 0101 está disponible en las salidas paralelas.
+Para obtener la palabra completa en la salida serie, esperamos 3 pulsos más.
+
+
+
+
