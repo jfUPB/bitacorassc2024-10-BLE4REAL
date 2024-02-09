@@ -142,13 +142,16 @@ un computador de 8 bits tiene la capacidad de representar 256 combinaciones úni
 
 Overflow ocurre cuando el resultado de una suma excede la capacidad de representación de los bits disponibles. En otras palabras, cuando la respuesta es demasiado grande para ser almacenada en el número de bits designado.
 
-ejemplo: los números de 4 bits (desde 0000 hasta 1111) en el sistema de complemento a 2. Consideremos la siguiente suma:
+los números de 4 bits (desde 0000 hasta 1111) en el sistema de complemento a 2. Consideremos la siguiente suma:
 
 (0110 + 0011)
 
 Realizamos la suma columna por columna: (0110) (6 en decimal)
 (0011) (3 en decimal)
 (1001) (9 en decimal)
+
+[![imagen-2024-02-08-201021994.png](https://i.postimg.cc/bYKy5VbH/imagen-2024-02-08-201021994.png)](https://postimg.cc/0r01MfVb)
+
 
 El resultado es (1001), que en decimal es 9. Sin embargo, estamos limitados a números de 4 bits. El bit más significativo (el primer bit a la izquierda) es 1, lo que indica un número negativo en el sistema de complemento a 2.
 Pero (1001) no representa -9; representa -7. Por lo tanto, hemos experimentado un overflow. La suma de 6 y 3 resultó en un número fuera del rango permitido para 4 bits.
@@ -195,6 +198,8 @@ Si una función específica no está implementada en la ALU
 
 Microprogramación: Se puede diseñar una microinstrucción específica para realizar la función deseada. Esto implica programar una secuencia de operaciones más básicas dentro de la ALU para lograr el resultado deseado.
 
+[![imagen-2024-02-08-200935324.png](https://i.postimg.cc/Y0TJyPs4/imagen-2024-02-08-200935324.png)](https://postimg.cc/kRF12T99)
+
 Instrucciones de software: En lugar de realizar la operación directamente en la ALU, se puede ejecutar una instrucción de software específica en el procesador. El software puede proporcionar la funcionalidad requerida sin depender exclusivamente de la ALU.
 
 Instrucciones de coprocesador: Algunas operaciones especializadas, como funciones matemáticas complejas o manipulación de cadenas, pueden ser manejadas por coprocesadores específicos (como la FPU). Estos coprocesadores trabajan junto con la ALU para extender las capacidades del procesador.
@@ -217,6 +222,8 @@ La lógica secuencial agrega memoria y permite almacenar y procesar datos a lo l
 
 Un ejemplo simple es un registro de desplazamiento. Imagina un registro de 4 bits que puede cargar y desplazar datos a la derecha. Aquí está su funcionamiento:
 
+[![imagen-2024-02-08-200841812.png](https://i.postimg.cc/tTjJ8r8M/imagen-2024-02-08-200841812.png)](https://postimg.cc/p9sPFBWf)
+
 Carga de Datos:
 Inicialmente, el registro está en estado 0 (CLR = 0).
 Cada pulso de reloj (CLK) captura el dato de entrada (D) en cada biestable.
@@ -238,6 +245,8 @@ Procesa datos de programas, sistemas operativos, dispositivos de entrada/salida 
 Almacena datos e instrucciones de programas en ejecución para un acceso rápido.
 
 Permite tener múltiples programas disponibles sin demoras.
+
+[![22.png](https://i.postimg.cc/Hs42NKKf/22.png)](https://postimg.cc/F7z3dPhZ)
 
 El bus de direcciones indica la posición de la memoria desde la que se leerá o escribirá.
 
