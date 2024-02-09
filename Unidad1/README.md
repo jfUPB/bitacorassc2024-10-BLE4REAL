@@ -227,6 +227,23 @@ Los datos se desplazan a la derecha con cada pulso de reloj.
 Después de 4 pulsos, la palabra 0101 está disponible en las salidas paralelas.
 Para obtener la palabra completa en la salida serie, esperamos 3 pulsos más.
 
+#### micro sesion 5
+
+la memoria RAM es crucial para el rendimiento de una computadora, y su relación con el bus de direcciones permite acceder y almacenar datos eficientemente
+
+La memoria RAM carga y almacena temporalmente las instrucciones que se ejecutan en el procesador.
+
+Procesa datos de programas, sistemas operativos, dispositivos de entrada/salida y discos duros.
+
+Almacena datos e instrucciones de programas en ejecución para un acceso rápido.
+
+Permite tener múltiples programas disponibles sin demoras.
+
+El bus de direcciones indica la posición de la memoria desde la que se leerá o escribirá.
+
+Cuando el bit de carga (load) es 0, se lee la dirección y se carga la información en el bus de datos.
+
+Cuando el bit de carga es 1, se escribe en la dirección especificada.
 
 
 
