@@ -131,5 +131,58 @@ un computador de 8 bits puede manejar 256 combinaciones únicas de valores binar
 en las operaciones de salto, si se pone "000" no salt, en el caso que haya alguna variabilidad de valores entre 1 y 0 se producira un efecto
 operaciones de salto: esto hace que en el cpu se puedan dar desplazamientos hacia distintas lineas de numeros
 
+#### micro sesion 4: 
+un computador de 8 bits tiene la capacidad de representar 256 combinaciones únicas de valores binarios, lo que permite la representación de una variedad de números en su formato binario. Esta capacidad de representación es fundamental en programación, y el conocimiento del rango de valores es esencial para evitar errores y garantizar la precisión en las operaciones numéricas.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+### sesion 3: jueves 8 febrero
+
+#### micro sesion 1
+
+Overflow ocurre cuando el resultado de una suma excede la capacidad de representación de los bits disponibles. En otras palabras, cuando la respuesta es demasiado grande para ser almacenada en el número de bits designado.
+
+ejemplo: los números de 4 bits (desde 0000 hasta 1111) en el sistema de complemento a 2. Consideremos la siguiente suma:
+
+(0110 + 0011)
+
+Realizamos la suma columna por columna: (0110) (6 en decimal)
+(0011) (3 en decimal)
+(1001) (9 en decimal)
+
+El resultado es (1001), que en decimal es 9. Sin embargo, estamos limitados a números de 4 bits. El bit más significativo (el primer bit a la izquierda) es 1, lo que indica un número negativo en el sistema de complemento a 2.
+Pero (1001) no representa -9; representa -7. Por lo tanto, hemos experimentado un overflow. La suma de 6 y 3 resultó en un número fuera del rango permitido para 4 bits.
+
+#### micro sesion 2
+
+Se aborda la representación de números enteros negativos en complemento a dos. Vamos a explorar cómo se logra esto y construir una tabla que represente un conjunto de números enteros positivos y negativos utilizando 4 bits.
+
+Bit más significativo (MSB): El primer bit (el más a la izquierda) se utiliza como bit de signo. Si es 0, el número es positivo; si es 1, el número es negativo.
+Magnitud del número: Los restantes bits representan la magnitud del número en valor absoluto.
+Complemento a dos: Para obtener el complemento a dos de un número negativo, primero encontramos el complemento a uno (invertimos todos los bits) y luego sumamos 1 al resultado.
+
+0	0000	0000
+1	0001	0001
+2	0010	0010
+3	0011	0011
+4	0100	0100
+5	0101	0101
+6	0110	0110
+7	0111	0111
+-1	-	1111
+-2	-	1110
+-3	-	1101
+-4	-	1100
+
+#### micro sesion 3
+
+Se aborda la Unidad Aritmética Lógica (ALU).
+
+Es un componente fundamental de muchos tipos de circuitos informáticos, incluyendo la Unidad Central de Procesamiento (CPU) de las computadoras, las Unidades de Punto Flotante (FPU) y las Unidades de Procesamiento Gráfico (GPU)
+
+Si una función específica no está implementada en la ALU, hay varias opciones:
+Microprogramación: Se puede diseñar una microinstrucción específica para realizar la función deseada. Esto implica programar una secuencia de operaciones más básicas dentro de la ALU para lograr el resultado deseado.
+Instrucciones de software: En lugar de realizar la operación directamente en la ALU, se puede ejecutar una instrucción de software específica en el procesador. El software puede proporcionar la funcionalidad requerida sin depender exclusivamente de la ALU.
+Instrucciones de coprocesador: Algunas operaciones especializadas, como funciones matemáticas complejas o manipulación de cadenas, pueden ser manejadas por coprocesadores específicos (como la FPU). Estos coprocesadores trabajan junto con la ALU para extender las capacidades del procesador.
+
+#### micro sesion 4
