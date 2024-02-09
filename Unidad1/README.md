@@ -53,9 +53,11 @@ por ultimo se hizo la tabla de valores que se solicitaba en la seccion de pregun
 
 #### micro sesion 4
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### sesion 3: miercoles 31 enero
+
+#### micro sesion 1
 
 Como se implementan las funciones booleanas usando hardware (gate logic) es un chip definido para ofrecer una funcion. Como nand. Hay 3 puertas  (and gate, or gate, not gate) estan diseñadas para obtener valores booleanos
 
@@ -63,11 +65,32 @@ Como se implementan las funciones booleanas usando hardware (gate logic) es un c
 
 Dicho circuito puede tener varias entradas pero una unica salida. 
 
+#### micro sesion 2
+
 [![Captura-de-pantalla-2024-01-31-144518.png](https://i.postimg.cc/qqM2wWrM/Captura-de-pantalla-2024-01-31-144518.png)](https://postimg.cc/bDWGNCdK)
 
 Para 3 tipos de entradas se puede hacer un diseño con 2 puertas y una salida
 
 [![Captura-de-pantalla-2024-01-31-145410.png](https://i.postimg.cc/ZKXyvWWq/Captura-de-pantalla-2024-01-31-145410.png)](https://postimg.cc/SJ7KwN70)
+
+#### micro sesion 3
+
+Puerta AND (AND gate):
+
+La puerta AND produce un resultado de 1 (verdadero) solo cuando ambas entradas son 1.
+Su implementación física en hardware se logra mediante transistores y conexiones que permiten la corriente solo cuando ambas entradas son verdaderas.
+Puerta OR (OR gate):
+
+La puerta OR produce un resultado de 1 cuando al menos una de las entradas es 1.
+En hardware, la puerta OR se construye utilizando transistores de manera que la corriente puede fluir si al menos una de las entradas es verdadera.
+Puerta NOT (NOT gate):
+
+La puerta NOT invierte la entrada, produciendo un resultado opuesto al valor de entrada.
+En hardware, la puerta NOT se implementa mediante un solo transistor que invierte el estado de la entrada.
+
+#### micro sesion 4
+
+La construcción de circuitos lógicos mediante puertas lógicas básicas es esencial para la implementación de funciones booleanas en hardware. La capacidad de combinar estas puertas lógicas de manera lógica y eficiente permite la creación de circuitos más complejos y la realización de operaciones booleanas específicas en dispositivos electrónicos y microprocesadores. En la práctica, muchos chips digitales están diseñados para ofrecer funciones específicas mediante la combinación y conexión de estas puertas lógicas básicas.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
