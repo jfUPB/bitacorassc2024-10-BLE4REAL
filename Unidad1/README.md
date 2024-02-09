@@ -20,11 +20,18 @@ Se puede simplificar operaciones mas complejas mediante leyes
 
 explica los fundamentos de la lógica booleana, destacando los conceptos de verdad y falsedad, así como las operaciones básicas como AND, OR y NOT. Se destaca la forma en que estos conceptos se combinan para construir circuitos lógicos, empezando desde operaciones simples hasta llegar a circuitos más complejos, como un sumador binario de un bit. En general, la conclusión es que la lógica booleana proporciona las bases teóricas para el diseño y construcción de circuitos lógicos en electrónica digital, permitiendo la implementación de diversas funciones y operaciones mediante la combinación de las operaciones booleanas básicas.
 
+#### micro sesion 4
+En resumen, las funciones booleanas son la base de la representación y manipulación de información en informática. Desde la construcción de circuitos lógicos hasta la programación de computadoras, estas funciones desempeñan un papel crucial en la creación y operación de sistemas digitales.
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 ### sesion 2: miercoles 31 enero
 
+#### micro sesion 1
+
 explica cómo las funciones booleanas se utilizan en la informática para representar y manipular información. También habla sobre cómo se pueden utilizar las funciones booleanas para construir circuitos lógicos y cómo se pueden utilizar para crear programas de computadora.
+
+#### micro sesion 2
 
 se aprende que por medio de tablas de valores se puedan contruir operaciones para determinar el valor de la funcion
 
@@ -34,6 +41,8 @@ tambien se puede observar una tabla de equivalencia con operaciones similares
 
 [![segunda.png](https://i.postimg.cc/3JkpdHWy/segunda.png)](https://postimg.cc/kBdDpzQ9)
 
+#### microsesion 3
+
 se distinguieron algunos teoremas, uno de ellos es que se pueden hacer todo tipo de funciones solo con (not y and), mas adelante en el video se mostro otro teorema el cual dice que nand tambien es una alternativa para hacer todo tipo de operaciones
 
 [![3.png](https://i.postimg.cc/rpMNdYvv/3.png)](https://postimg.cc/0zXwFZ5f)
@@ -41,6 +50,8 @@ se distinguieron algunos teoremas, uno de ellos es que se pueden hacer todo tipo
 por ultimo se hizo la tabla de valores que se solicitaba en la seccion de preguntas de la unidad 1 
 
 [![VIDEO-7.png](https://i.postimg.cc/YCYH38dr/VIDEO-7.png)](https://postimg.cc/DSvHfQVH)
+
+#### micro sesion 4
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -58,7 +69,7 @@ Para 3 tipos de entradas se puede hacer un diseño con 2 puertas y una salida
 
 [![Captura-de-pantalla-2024-01-31-145410.png](https://i.postimg.cc/ZKXyvWWq/Captura-de-pantalla-2024-01-31-145410.png)](https://postimg.cc/SJ7KwN70)
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## SEMANA 3
 
