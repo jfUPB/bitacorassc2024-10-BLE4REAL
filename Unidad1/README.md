@@ -265,7 +265,6 @@ I/O teclado, display
 
 algunas estructuras de control
 
--------------------------------------------------------
 
 ### micro sesion 2
 variables
@@ -275,6 +274,8 @@ variables
 
 
 ### micro sesion 3
+
+[![imagen-2024-02-12-152502398.png](https://i.postimg.cc/HkBwbydj/imagen-2024-02-12-152502398.png)](https://postimg.cc/WdqqvtDP)
 
 // si hay una tecla presionada pinto los 16 primeros pixeles, sino apague
 //leer la posicion 24576 que es la direccion donde esta mapeado el teclado
@@ -301,6 +302,13 @@ M = 0
 
 @16384
 M = -1
+
+#### micro sesion 4
+
+Si hay una tecla presionada, la dirección de memoria 24576 contendrá un valor distinto de cero.
+En ese caso, se activará la condición para pintar los 16 primeros píxeles en la pantalla, estableciendo la posición de memoria 16384 en -1.
+ Si no hay tecla presionada, la posición de memoria 24576 contendrá cero y se apagarán los primeros 16 píxeles en la pantalla, estableciendo la posición de memoria 16384 en cero.
+ El programa luego vuelve al inicio para leer continuamente la posición de memoria 24576 y repetir el proceso.
 
 
 
