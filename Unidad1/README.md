@@ -248,11 +248,27 @@ Permite tener múltiples programas disponibles sin demoras.
 
 [![22.png](https://i.postimg.cc/Hs42NKKf/22.png)](https://postimg.cc/F7z3dPhZ)
 
-El bus de direcciones indica la posición de la memoria desde la que se leerá o escribirá.
+El bus de direcciones indica la posición de la memoria desde la que se leerá o escribirá. Cuando el bit de carga es 1, se escribe en la dirección especificada.
 
-Cuando el bit de carga (load) es 0, se lee la dirección y se carga la información en el bus de datos.
 
-Cuando el bit de carga es 1, se escribe en la dirección especificada.
+### SEMANA 4
+
+#### micro sesion 1
+
+labels
+
+variables
+
+saltos 
+
+I/O teclado, display
+
+algunas estructuras de control
+
+
+
+
+
 
 
 
