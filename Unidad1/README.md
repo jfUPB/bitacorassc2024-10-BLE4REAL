@@ -265,6 +265,43 @@ I/O teclado, display
 
 algunas estructuras de control
 
+-------------------------------------------------------
+
+### micro sesion 2
+variables
+ una variable se define especificando su nombre y su tamaño. La variable compone la ram
+
+ [![imagen-2024-02-12-152236625.png](https://i.postimg.cc/T3qDcX91/imagen-2024-02-12-152236625.png)](https://postimg.cc/k2GGnzLP)
+
+
+### micro sesion 3
+
+// si hay una tecla presionada pinto los 16 primeros pixeles, sino apague
+//leer la posicion 24576 que es la direccion donde esta mapeado el teclado
+//si lo que leo es diferente de cero, entonces hay 
+
+//leer el teclado
+(START) 
+@24576
+D= M
+@IF
+D; JEQ
+//ELSE
+@16384
+M = -1
+@START
+0; JMP
+(IF)
+@16384
+M = 0
+@START
+0;JMP
+
+//pinto la pantalla (primeros 16 pixeles)
+
+@16384
+M = -1
+
 
 
 
