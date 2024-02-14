@@ -422,6 +422,17 @@ Los mnemónicos son abreviaturas legibles para los humanos que representan estas
 
 [![imagen-2024-02-14-122918336.png](https://i.postimg.cc/sDg19HDK/imagen-2024-02-14-122918336.png)](https://postimg.cc/Rq2MvRtn)
 
+### Sesion 1: Lunes 11 febrero
+
+
+#### micro sesion 2
+
+se hizo una prueba con un codigo aparte. El código ensamblador realiza una copia del valor almacenado en la ubicación de memoria @R0 a la ubicación de memoria @n y establece la variable @i en cero. Luego, asigna el valor de la dirección de memoria @SCREEN a la variable @address. Inicia un bucle (LOOP) que compara los valores de @i y @n; si @i es mayor que @n, salta al final (END). Dentro del bucle, actualiza el valor de la memoria en la dirección almacenada en @address a -1, incrementa @i y ajusta @address. El bucle continúa saltando a sí mismo. El código finaliza con una instrucción de salto incondicional (0;JMP) que asegura un bucle infinito.
+
+
+
+
+
 
 
 
