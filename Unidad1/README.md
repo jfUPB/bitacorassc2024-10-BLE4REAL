@@ -251,7 +251,10 @@ Permite tener múltiples programas disponibles sin demoras.
 El bus de direcciones indica la posición de la memoria desde la que se leerá o escribirá. Cuando el bit de carga es 1, se escribe en la dirección especificada.
 
 
-### SEMANA 4
+## SEMANA 4
+
+### Sesion 1: Lunes 11 febrero
+
 
 #### micro sesion 1
 
@@ -310,8 +313,114 @@ En ese caso, se activará la condición para pintar los 16 primeros píxeles en 
  Si no hay tecla presionada, la posición de memoria 24576 contendrá cero y se apagarán los primeros 16 píxeles en la pantalla, estableciendo la posición de memoria 16384 en cero.
  El programa luego vuelve al inicio para leer continuamente la posición de memoria 24576 y repetir el proceso.
 
+### Sesion 2: Miercoles 14 febrero
+
+#### micro sesion 1
+
+se exploran conceptos relacionados con los contadores en el contexto de la construcción de una computadora desde cero. Aquí tienes un resumen:
+
+Los contadores son componentes esenciales en la arquitectura de las computadoras.
+
+Función principal: El contador de programa (o Program Counter, PC) es un registro crucial. Almacena la dirección de la próxima instrucción que debe ejecutar la CPU.
+
+Incremento automático: En cada ciclo de instrucción, el contador de programa se incrementa automáticamente, permitiendo leer las instrucciones en secuencia desde la memoria.
+
+Alteración de la secuencia: Instrucciones como bifurcaciones o llamadas y retornos de subrutinas pueden modificar el valor del contador de programa
+
+El contador de programa es un registro fundamental en la arquitectura de los procesadores. Su función es indicar la posición en la secuencia de instrucciones del procesador.
+
+[![imagen-2024-02-14-120900795.png](https://i.postimg.cc/WbLqj15q/imagen-2024-02-14-120900795.png)](https://postimg.cc/kDsgvq37)
+
+#### micro sesion 2
+
+se exploran conceptos relacionados con los lenguajes de máquina en el contexto de la construcción de una computadora desde cero.
+
+Los lenguajes de máquina son fundamentales para la programación y el funcionamiento de las computadoras.
+
+Función principal: Los lenguajes de máquina son la forma en que las computadoras interpretan y ejecutan instrucciones. Cada instrucción se representa mediante códigos binarios específicos.
+
+Elementos clave:
+Instrucciones: Representan operaciones básicas como sumar, restar, cargar datos, etc.
+Operandos: Datos sobre los que se aplican las instrucciones.
+Formato de instrucción: La estructura que define cómo se codifican las instrucciones.
+
+[![imagen-2024-02-14-121922082.png](https://i.postimg.cc/3RsvNXHm/imagen-2024-02-14-121922082.png)](https://postimg.cc/471dFhyx)
+
+Lenguaje de Máquina:
+
+Es el nivel más bajo de lenguaje de programación.
+
+Consiste en código binario que se comunica directamente con el hardware de la computadora.
+
+Las instrucciones son representadas por secuencias de ceros y unos.
+
+Es difícil de leer y escribir para los humanos debido a su naturaleza críptica.
+
+Es específico para cada arquitectura de microprocesador12.
+
+Lenguaje ensamblador
+
+Lenguaje Ensamblador:
+
+Utiliza mnemotécnicos y símbolos para representar operaciones y datos.
+
+Es más legible para los humanos que el código máquina.
+
+Refleja directamente la arquitectura y las instrucciones en lenguaje de máquina de la CPU.
+
+Cada arquitectura de CPU tiene su propio lenguaje de máquina y, por lo tanto, su propio lenguaje ensamblador34.
+
+Se escribe para el procesador, mientras que el código máquina se escribe para el ordenador
+
+#### micro sesion 3
+
+El programa almacenado es un concepto fundamental en la arquitectura de las computadoras.
+
+Computador de Programa Almacenado:
+Es aquel que almacena las instrucciones del programa en la memoria electrónica1.
+En un computador con arquitectura de von Neumann, tanto los datos como las instrucciones del programa se almacenan en la misma memoria.
+En contraste, un computador con arquitectura Harvard tiene memorias separadas para datos y programas.
+
+Función del Contador de Programa (PC):
+El contador de programa es un registro crucial en la CPU.
+Almacena la dirección de la próxima instrucción que debe ejecutar la computadora desde la memoria.
+En cada ciclo de instrucción, el contador se incrementa automáticamente, permitiendo leer las instrucciones en secuencia desde la memoria.
+Es esencial para el correcto funcionamiento de cualquier programa, ya que guía la ejecución de las instrucciones en el orden adecuado
+
+#### Micro sesion 4
+
+En la arquitectura del computador Hack, las instrucciones se componen de 16 bits y se dividen en varios campos.
+
+Instrucciones Aritméticas y Lógicas:
+Estas instrucciones realizan operaciones matemáticas y lógicas en los registros y la memoria.
+Ejemplos:
+D=A: Asigna el valor del registro A al registro D.
+D=D+1: Incrementa el valor del registro D en 1.
+Instrucciones de Acceso a Memoria:
+Permiten leer o escribir datos en la memoria RAM.
+
+Ejemplos:
+@123: Carga el valor almacenado en la dirección de memoria 123 en el registro A.
+M=D: Almacena el valor del registro D en la dirección de memoria apuntada por A.
+Instrucciones de Salto Condicional:
+Controlan el flujo del programa según condiciones específicas.
+
+[![imagen-2024-02-14-123023847.png](https://i.postimg.cc/PrQ9hKWG/imagen-2024-02-14-123023847.png)](https://postimg.cc/CzdmsGrJ)
+
+#### Micro sesion 5
 
 
+Ejemplos:
+D;JGT: Salta a la dirección de memoria especificada si el valor en D es mayor que cero.
+0;JMP: Salta incondicionalmente a la dirección de memoria especificada.
+Instrucciones de Salto Incondicional:
+Realizan saltos sin verificar condiciones.
+
+Ejemplo:
+@LOOP: Salta a la etiqueta LOOP.
+Los mnemónicos son abreviaturas legibles para los humanos que representan estas instrucciones. Por ejemplo, D=A se representa como M=D en mnemónicos. Estos mnemónicos se traducen a códigos binarios específicos para su ejecución en el hardware
+
+[![imagen-2024-02-14-122918336.png](https://i.postimg.cc/sDg19HDK/imagen-2024-02-14-122918336.png)](https://postimg.cc/Rq2MvRtn)
 
 
 
