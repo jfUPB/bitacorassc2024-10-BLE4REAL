@@ -433,6 +433,8 @@ se dio el tiempo de clase para adelantar el reto propuesto al inicio de el curso
 se hizo una prueba con un codigo aparte. El código ensamblador realiza una copia del valor almacenado en la ubicación de memoria @R0 a la ubicación de memoria @n y establece la variable @i en cero. Luego, asigna el valor de la dirección de memoria @SCREEN a la variable @address. Inicia un bucle (LOOP) que compara los valores de @i y @n; si @i es mayor que @n, salta al final (END). Dentro del bucle, actualiza el valor de la memoria en la dirección almacenada en @address a -1, incrementa @i y ajusta @address. El bucle continúa saltando a sí mismo. El código finaliza con una instrucción de salto incondicional (0;JMP) que asegura un bucle infinito.
 
 #### micro sesion 3
+el código ensamblador realiza una copia del valor almacenado en la ubicación de memoria @R0 a la ubicación de memoria @n, inicializa la variable @i en cero y asigna el valor de la dirección de memoria @SCREEN a la variable @address. Luego, inicia un bucle (LOOP) que compara los valores de @i y @n; si @i es mayor que @n, salta al final (END). Dentro del bucle, actualiza el valor de la memoria en la dirección almacenada en @address a -1, incrementa @i y ajusta @address. El bucle continúa repitiéndose indefinidamente, asegurando un comportamiento de bucle infinito. 
+
 
 
 
