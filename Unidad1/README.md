@@ -310,7 +310,24 @@ En ese caso, se activará la condición para pintar los 16 primeros píxeles en 
  Si no hay tecla presionada, la posición de memoria 24576 contendrá cero y se apagarán los primeros 16 píxeles en la pantalla, estableciendo la posición de memoria 16384 en cero.
  El programa luego vuelve al inicio para leer continuamente la posición de memoria 24576 y repetir el proceso.
 
-### Sesion 2: Miercoles 14 febrero
+### Sesion 2: miercoles 14 febrero
+
+#### micro sesion 1
+
+se dio el tiempo de clase para adelantar el reto propuesto al inicio de el curso
+
+#### micro sesion 2
+
+se hizo una prueba con un codigo aparte. El código ensamblador realiza una copia del valor almacenado en la ubicación de memoria @R0 a la ubicación de memoria @n y establece la variable @i en cero. Luego, asigna el valor de la dirección de memoria @SCREEN a la variable @address. Inicia un bucle (LOOP) que compara los valores de @i y @n; si @i es mayor que @n, salta al final (END). Dentro del bucle, actualiza el valor de la memoria en la dirección almacenada en @address a -1, incrementa @i y ajusta @address. El bucle continúa saltando a sí mismo. El código finaliza con una instrucción de salto incondicional (0;JMP) que asegura un bucle infinito.
+
+#### micro sesion 3
+el código ensamblador realiza una copia del valor almacenado en la ubicación de memoria @R0 a la ubicación de memoria @n, inicializa la variable @i en cero y asigna el valor de la dirección de memoria @SCREEN a la variable @address. Luego, inicia un bucle (LOOP) que compara los valores de @i y @n; si @i es mayor que @n, salta al final (END). Dentro del bucle, actualiza el valor de la memoria en la dirección almacenada en @address a -1, incrementa @i y ajusta @address. El bucle continúa repitiéndose indefinidamente, asegurando un comportamiento de bucle infinito. 
+
+#### micro sesion 4
+
+
+
+### Sesion 3: Miercoles 14 febrero
 
 #### micro sesion 1
 
@@ -419,18 +436,6 @@ Los mnemónicos son abreviaturas legibles para los humanos que representan estas
 
 [![imagen-2024-02-14-122918336.png](https://i.postimg.cc/sDg19HDK/imagen-2024-02-14-122918336.png)](https://postimg.cc/Rq2MvRtn)
 
-### Sesion 1: miercoles 14 febrero
-
-#### micro sesion 1
-
-se dio el tiempo de clase para adelantar el reto propuesto al inicio de el curso
-
-#### micro sesion 2
-
-se hizo una prueba con un codigo aparte. El código ensamblador realiza una copia del valor almacenado en la ubicación de memoria @R0 a la ubicación de memoria @n y establece la variable @i en cero. Luego, asigna el valor de la dirección de memoria @SCREEN a la variable @address. Inicia un bucle (LOOP) que compara los valores de @i y @n; si @i es mayor que @n, salta al final (END). Dentro del bucle, actualiza el valor de la memoria en la dirección almacenada en @address a -1, incrementa @i y ajusta @address. El bucle continúa saltando a sí mismo. El código finaliza con una instrucción de salto incondicional (0;JMP) que asegura un bucle infinito.
-
-#### micro sesion 3
-el código ensamblador realiza una copia del valor almacenado en la ubicación de memoria @R0 a la ubicación de memoria @n, inicializa la variable @i en cero y asigna el valor de la dirección de memoria @SCREEN a la variable @address. Luego, inicia un bucle (LOOP) que compara los valores de @i y @n; si @i es mayor que @n, salta al final (END). Dentro del bucle, actualiza el valor de la memoria en la dirección almacenada en @address a -1, incrementa @i y ajusta @address. El bucle continúa repitiéndose indefinidamente, asegurando un comportamiento de bucle infinito. 
 
 
 
