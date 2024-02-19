@@ -24,7 +24,6 @@ explica los fundamentos de la lógica booleana, destacando los conceptos de verd
 En resumen, las funciones booleanas son la base de la representación y manipulación de información en informática. Desde la construcción de circuitos lógicos hasta la programación de computadoras, estas funciones desempeñan un papel crucial en la creación y operación de sistemas digitales.
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### sesion 2: miercoles 31 enero
 
 #### micro sesion 1
@@ -53,7 +52,6 @@ por ultimo se hizo la tabla de valores que se solicitaba en la seccion de pregun
 
 #### micro sesion 4
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### sesion 3: miercoles 31 enero
 
@@ -92,7 +90,6 @@ En hardware, la puerta NOT se implementa mediante un solo transistor que inviert
 
 La construcción de circuitos lógicos mediante puertas lógicas básicas es esencial para la implementación de funciones booleanas en hardware. La capacidad de combinar estas puertas lógicas de manera lógica y eficiente permite la creación de circuitos más complejos y la realización de operaciones booleanas específicas en dispositivos electrónicos y microprocesadores. En la práctica, muchos chips digitales están diseñados para ofrecer funciones específicas mediante la combinación y conexión de estas puertas lógicas básicas.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## SEMANA 3
 
@@ -105,7 +102,7 @@ se realizo una actividad de circuitos logicos en donde mediante operaciones mate
 este circuito sintetiza lo que es en si el circuito que opera en las computadoas
 
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### sesion 2: miercoles 7 febrero
 
 #### micro sesion 1:
@@ -134,7 +131,6 @@ operaciones de salto: esto hace que en el cpu se puedan dar desplazamientos haci
 #### micro sesion 4: 
 un computador de 8 bits tiene la capacidad de representar 256 combinaciones únicas de valores binarios, lo que permite la representación de una variedad de números en su formato binario. Esta capacidad de representación es fundamental en programación, y el conocimiento del rango de valores es esencial para evitar errores y garantizar la precisión en las operaciones numéricas.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### sesion 3: jueves 8 febrero
 
@@ -269,14 +265,15 @@ I/O teclado, display
 algunas estructuras de control
 
 
-### micro sesion 2
+#### micro sesion 2
+
 variables
  una variable se define especificando su nombre y su tamaño. La variable compone la ram
 
  [![imagen-2024-02-12-152236625.png](https://i.postimg.cc/T3qDcX91/imagen-2024-02-12-152236625.png)](https://postimg.cc/k2GGnzLP)
 
 
-### micro sesion 3
+#### micro sesion 3
 
 [![imagen-2024-02-12-152502398.png](https://i.postimg.cc/HkBwbydj/imagen-2024-02-12-152502398.png)](https://postimg.cc/WdqqvtDP)
 
