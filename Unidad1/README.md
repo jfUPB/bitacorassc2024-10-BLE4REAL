@@ -436,6 +436,68 @@ Los mnemónicos son abreviaturas legibles para los humanos que representan estas
 
 [![imagen-2024-02-14-122918336.png](https://i.postimg.cc/sDg19HDK/imagen-2024-02-14-122918336.png)](https://postimg.cc/Rq2MvRtn)
 
+## SEMANA 5
+
+
+### sesion 1: lunes 19 febrero
+
+
+#### micro sesion 1
+se empieza creando una plantilla la cual tiene pixeles y en cada uno hay un valor determinado. Hay que crear un diseño usando pixeles
+[![imagen-2024-02-19-143712926.png](https://i.postimg.cc/k4dCJyCc/imagen-2024-02-19-143712926.png)](https://postimg.cc/hJM6MTfz)
+
+se realizo un diseño, en mi caso dibuje un trueno en las celdas del excel 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/7c48f308-5771-4108-9e45-d054f70eb739)
+
+
+#### micro sesion 2
+se almacenaron los datos de los pixeles de la plantilla y se los utilizara para hacer el codigo
+
+19857
+19186
+19218
+19250
+19282
+19314
+19346
+19378
+19410
+19442
+19474
+
+aqui se ve como estarian almacenados
+
+#### micro sesion 3
+
+se pasaron a lenguaje ensamblador para que puedan funcionar con el codigo
+
+M=-1
+@17391
+M=-1
+@17423
+M=-1
+@17455
+M=-1
+@17487
+M=-1
+@17519
+M=-1
+@17551
+M=-1
+
+#### micro sesion 4
+se descargo la plantilla, luego se hizo el dibujo mediante los pixeles, posteriormente se programaron para lenguaje ensamblador y asi quedaria la primera parte del reto
+
+
+
+
+
+
+
+
+
+
 
 
 
