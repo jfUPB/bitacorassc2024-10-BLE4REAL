@@ -578,7 +578,7 @@ El bucle buclePint sigue una lógica similar al bucle bucleDespint, pero con dif
   
    
    +-----------+
-   | Start     |
+   | empezar   |
    +-----------+
        |
        V
@@ -680,17 +680,13 @@ El bucle buclePint sigue una lógica similar al bucle bucleDespint, pero con dif
    | M=0  |
    +------+
        |
-       V
-   
-   
+       V  
    +------------+
    | bucleDespint|
    | 0;JMP      |
    +------------+
        |
-       V
-  
-   
+       V   
    +-------------+
    | ?           |
    | 0;JMP       |
