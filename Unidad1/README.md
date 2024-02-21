@@ -493,12 +493,178 @@ se descargo la plantilla, luego se hizo el dibujo mediante los pixeles, posterio
 
 #### micro sesion 1
 
+#### micro sesion 2
+
+#### micro sesion 3
+
+#### micro sesion 4
+
 
 ### Sesion 3: miercoles 21 febrero
 
 #### micro sesion 1
 
+Inicialización de Variables:
+Se comienza cargando el valor absoluto de 16384 en el registro D y luego almacenándolo en la dirección de memoria 16.
+Posteriormente, se carga el valor 65 en el registro D y se realiza la resta entre D y el contenido de la dirección de memoria 24576.
 
+@16384
+D=A
+@16
+M=D
+@65
+D=A
+@24576
+D=D-M
+
+#### micro sesion 2
+
+Bucle buclePint:
+A continuación, se encuentra un salto condicional (D;JEQ) que lleva al programa a la etiqueta buclePint si la comparación es verdadera. Sin embargo, no se proporciona el código específico para esta etiqueta, lo que hace que la lógica de este bucle sea desconocida sin más detalles.
+
+@buclePint
+D;JEQ
+
+
+#### micro sesion 3
+
+Operaciones después de buclePint:
+Después del salto condicional, se carga el valor 79 en el registro D y se realiza nuevamente una resta con el contenido de la dirección de memoria 24576.
+Luego, hay otro salto condicional (D;JEQ) que lleva al programa a la etiqueta bucleDespint si la comparación es verdadera.
+
+@79
+D=A
+@24576
+D=D-M
+@bucleDespint
+D;JEQ
+
+#### micro sesion 4
+
+Bucle bucleDespint:
+La etiqueta bucleDespint incluye operaciones que implican cargar el contenido de la dirección de memoria 16 en el registro D, calcular la diferencia entre este valor y 20603, y realizar un salto condicional (D;JEQ). Si la comparación es verdadera, se sale del bucle; de lo contrario, se incrementa el valor en la dirección de memoria 16 en 1 y se establece su valor en 0.
+
+@bucleDespint
+D=M
+@20603
+D=A-D
+@?
+D;JEQ
+@16
+AM=M+1
+M=0
+@bucleDespint
+0;JMP
+
+#### micro sesion 5
+
+Operaciones después de bucleDespint:
+Después de salir del bucle bucleDespint, hay una instrucción de salto incondicional (0;JMP) que lleva al programa a una dirección desconocida representada por @?. Sin el código específico que sigue a esta instrucción, no es posible determinar el comportamiento preciso.
+
+@?
+0;JMP
+
+#### explicacion reto
+
+
+En la sección de inicialización de variables, el código carga el valor absoluto de 16384 en el registro D y luego almacena ese valor en la dirección de memoria 16. Posteriormente, se carga el valor 65 en el registro D y se resta este valor de la dirección de memoria 24576.
+
+
+En el bucle bucleDespint, se calcula la diferencia entre el valor almacenado en la dirección de memoria 16 y el valor 20603. Si esta diferencia es igual a cero, el programa salta al final del bucle. En caso contrario, incrementa el valor en la dirección de memoria 16 en 1 y establece su valor en 0. Luego, el programa salta de nuevo a la etiqueta bucleDespint.
+
+
+El bucle buclePint sigue una lógica similar al bucle bucleDespint, pero con diferentes valores y condiciones. Realiza operaciones similares, comparando y saltando en función de la igualdad a cero. Sin embargo, las operaciones y valores específicos utilizados en este bucle son diferentes a los del bucle bucleDespint
+
+   +-----------+
+   | Start     |
+   +-----------+
+       |
+       V
+   +-------+
+   | 16384 |
+   |   D=A  |
+   +-------+
+       |
+       V
+   +------+
+   | 16   |
+   | M=D  |
+   +------+
+       |
+       V
+   +-------+
+   |  65   |
+   |   D=A |
+   +-------+
+       |
+       V
+   +--------+
+   | 24576  |
+   | D=D-M  |
+   +--------+
+       |
+       V
+   +------------+      YES
+   | buclePint  |<-----------+
+   |  D;JEQ     |            |
+   +------------+            |
+       |                     |
+      NO                     |
+       |                     |
+       V                     |
+   +-------+                 |
+   |  79   |                 |
+   |   D=A |                 |
+   +-------+                 |
+       |                     |
+       V                     |
+   +--------+                |
+   | 24576  |                |
+   | D=D-M  |                |
+   +--------+                |
+       |                     |
+       V                     |
+   +-------------+    YES    |
+   | bucleDespint|<----------+
+   |  D;JEQ     |
+   +-------------+
+       |
+       V
+   +------+
+   | 16   |
+   |  D=M |
+   +------+
+       |
+       V
+   +--------+
+   | 20603  |
+   | D=A-D  |
+   +--------+
+       |
+       V
+   +----+
+   | ?  |<----------+
+   |0;JMP|           |
+   +----+             |
+       |              |
+       V              |
+   +------+
+   | 16   |
+   |AM=M+1|
+   | M=0  |
+   +------+
+       |
+       V
+   +------------+
+   | bucleDespint|
+   | 0;JMP      |
+   +------------+
+       |
+       V
+   +-------------+
+   | ?           |
+   | 0;JMP       |
+   +-------------+
 
 
 
