@@ -493,11 +493,74 @@ se descargo la plantilla, luego se hizo el dibujo mediante los pixeles, posterio
 
 #### micro sesion 1
 
+El modelo de von Neumann, también conocido como arquitectura von Neumann o arquitectura Princeton, es un concepto fundamental en la informática. Fue propuesto por John von Neumann en su Primer Borrador de un Informe sobre la EDVAC en 1945 . A continuación, exploraremos los aspectos clave de esta arquitectura:
+
+Componentes:
+Unidad de Procesamiento: Contiene tanto una unidad aritmético-lógica (ALU) como registros del procesador.
+Unidad de Control: Incluye un registro de instrucciones y un contador de programa.
+Memoria: Almacena tanto datos como instrucciones.
+Almacenamiento Masivo Externo: Se utiliza para el almacenamiento a largo plazo de datos.
+Mecanismos de Entrada y Salida: Facilitan la comunicación con dispositivos externos.
+Concepto de Programa Almacenado:
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/501d2340-184e-4eac-a998-b389b1f62721)
+
+
+
+
+
+
 #### micro sesion 2
+
+En la arquitectura von Neumann, una computadora puede almacenar un conjunto de instrucciones (un programa) en la memoria.
+Este diseño permite flexibilidad, ya que el mismo mecanismo subyacente codifica tanto las instrucciones del programa como los datos.
+A diferencia de las máquinas de programa fijo anteriores, donde era necesario volver a cablear y reconstruir para cada tarea, las computadoras de programa almacenado simplificaron el proceso de cambiar programas.
+Cuello de Botella de von Neumann:
+El término “cuello de botella de von Neumann” se refiere a la limitación que surge cuando la búsqueda de instrucciones y las operaciones de datos no pueden ocurrir simultáneamente.
+Esta arquitectura de bus compartido puede dificultar el rendimiento del sistema.
+Las computadoras modernas a menudo mitigan este cuello de botella utilizando cachés separadas para instrucciones y datos.
+Comparación con la Arquitectura Harvard:
+La arquitectura von Neumann es más simple que la arquitectura Harvard.
+A diferencia de la arquitectura Harvard, que tiene buses de dirección y datos dedicados para el acceso a la memoria y la búsqueda de instrucciones, la arquitectura von Neumann utiliza un bus común para ambos.
+El bus compartido es una característica distintiva de los sistemas von Neumann.
+En resumen, la arquitectura von Neumann revolucionó la informática al introducir el concepto de una computadora de programa almacenado, lo que permitió una mayor flexibilidad y facilidad de programación. Sigue siendo un modelo fundamental para la mayoría de las computadoras modernas.
+
 
 #### micro sesion 3
 
+se explora en detalle la Unidad Central de Procesamiento (CPU), que es el corazón de cada computadora. Aquí tienes un resumen de los puntos clave:
+
+Función de la CPU:
+La CPU es responsable de ejecutar los programas que conocemos y amamos.
+Realiza operaciones aritméticas, transferencias de datos y saltos condicionales.
+
+
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/df5875b8-085c-434e-a0a3-fb995b534ae7)
+
+
+Componentes de la CPU:
+Unidad de Control: Supervisa y coordina las operaciones de la CPU.
+Unidad Aritmético-Lógica (ALU): Realiza cálculos matemáticos y operaciones lógicas.
+Registros del Procesador: Almacenan datos temporales durante las operaciones.
+Contador de Programa (PC): Rastrea la ubicación de la próxima instrucción.
+Instrucciones y Datos:
+La CPU busca instrucciones en la memoria principal.
+Decodifica las instrucciones y determina qué operación realizar.
+Ejecuta la instrucción utilizando los datos necesarios.
+Ciclo de Buscar-Ejecutar:
+Este ciclo se repite continuamente para cada instrucción del programa.
+La CPU busca, decodifica y ejecuta instrucciones en secuencia.
+
 #### micro sesion 4
+
+se exploran conceptos relacionados con la computadora Hack. Aquí tienes un resumen de los temas tratados:
+
+Arquitectura de Von Neumann: Se aborda la estructura básica de una computadora, incluyendo la memoria, la unidad de control y la unidad aritmético-lógica 1.
+Ciclo de Fetch-Execute: Se explica cómo la computadora busca y ejecuta instrucciones almacenadas en la memoria 1.
+Unidad Central de Procesamiento (CPU): Se profundiza en las funciones de la CPU, como la decodificación de instrucciones y la ejecución de operaciones 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/96b69f80-72f1-4bf2-b02d-96c854f01ab0)
 
 
 ### Sesion 3: miercoles 21 febrero
