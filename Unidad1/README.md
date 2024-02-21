@@ -575,35 +575,47 @@ En el bucle bucleDespint, se calcula la diferencia entre el valor almacenado en 
 
 El bucle buclePint sigue una lógica similar al bucle bucleDespint, pero con diferentes valores y condiciones. Realiza operaciones similares, comparando y saltando en función de la igualdad a cero. Sin embargo, las operaciones y valores específicos utilizados en este bucle son diferentes a los del bucle bucleDespint
 
+  
+   
    +-----------+
    | Start     |
    +-----------+
        |
        V
+  
+   
    +-------+
    | 16384 |
    |   D=A  |
    +-------+
        |
        V
+  
+   
    +------+
    | 16   |
    | M=D  |
    +------+
        |
        V
+   
+   
    +-------+
    |  65   |
    |   D=A |
    +-------+
        |
        V
+  
+   
    +--------+
    | 24576  |
    | D=D-M  |
    +--------+
        |
        V
+ 
+   
    +------------+      YES
    | buclePint  |<-----------+
    |  D;JEQ     |            |
@@ -612,42 +624,56 @@ El bucle buclePint sigue una lógica similar al bucle bucleDespint, pero con dif
       NO                     |
        |                     |
        V                     |
+   
+   
    +-------+                 |
    |  79   |                 |
    |   D=A |                 |
    +-------+                 |
        |                     |
        V                     |
+  
+   
    +--------+                |
    | 24576  |                |
    | D=D-M  |                |
    +--------+                |
        |                     |
        V                     |
+  
+   
    +-------------+    YES    |
    | bucleDespint|<----------+
    |  D;JEQ     |
    +-------------+
        |
        V
+   
+   
    +------+
    | 16   |
    |  D=M |
    +------+
        |
        V
+ 
+   
    +--------+
    | 20603  |
    | D=A-D  |
    +--------+
        |
        V
+ 
+   
    +----+
    | ?  |<----------+
    |0;JMP|           |
    +----+             |
        |              |
        V              |
+   
+   
    +------+
    | 16   |
    |AM=M+1|
@@ -655,12 +681,16 @@ El bucle buclePint sigue una lógica similar al bucle bucleDespint, pero con dif
    +------+
        |
        V
+   
+   
    +------------+
    | bucleDespint|
    | 0;JMP      |
    +------------+
        |
        V
+  
+   
    +-------------+
    | ?           |
    | 0;JMP       |
