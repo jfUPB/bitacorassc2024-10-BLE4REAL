@@ -489,7 +489,14 @@ M=-1
 #### micro sesion 4
 se descargo la plantilla, luego se hizo el dibujo mediante los pixeles, posteriormente se programaron para lenguaje ensamblador y asi quedaria la primera parte del reto
 
+### Sesion 2: miercoles 21 febrero
 
+#### micro sesion 1
+
+
+### Sesion 3: miercoles 21 febrero
+
+#### micro sesion 1
 
 
 
