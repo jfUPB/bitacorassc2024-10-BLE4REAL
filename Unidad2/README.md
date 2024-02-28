@@ -111,9 +111,9 @@ clase
 
 #include <stdio.h>
 
-# define V 21
+ define V 21
 
-# define H 75
+ define H 75
 
 void inicio (char campo [V] [H], int pelX,int pelY,int inijug,int finjug, int iniia,int finia);
 
