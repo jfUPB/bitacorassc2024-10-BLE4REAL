@@ -103,7 +103,23 @@ se ha avanzado a través de diversas etapas que nos han llevado desde la configu
 
 ### Sesion 2 28 febrero
 
-clase
+#### micro sesion 1
+
+se va a instalar el lenguaje c en el portatil, despues se debe abrir el visual studio y se procede a crerar un nuevo proyecto, se necesita un empity project en c++ (c++, windows, consola).
+Se va a hacer una prueba basica 
+en source files click derecho y se adiciona un nuevo item (main.c) y se adicciona
+
+#### micro sesion 2
+
+se usa una biblioteca externa, se tiene que tener otro directorio con los .lib y se le debe indicar donde estan los .h y los punto lib y el programa debe saber donde esta todo el codigo 
+
+#### micro sesion 3
+
+Configuración C/C++ -> Directorios de Inclusión Adicionales y agregar la ruta al directorio de encabezados externos (libs o external).
+
+#### micro sesion 4
+
+Con estas configuraciones, el programa debería saber dónde encontrar los encabezados y bibliotecas necesarios para utilizar la biblioteca externa. Asegúrate de que tu entorno de desarrollo esté actualizado según el sistema que estés utilizando.
 
 ### Sesion 3 28 febrero
 
