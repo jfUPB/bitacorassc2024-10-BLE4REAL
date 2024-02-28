@@ -101,4 +101,176 @@ Desarrollo de la función de reproducción que recorre la lista enlazada y resta
 
 se ha avanzado a través de diversas etapas que nos han llevado desde la configuración básica del entorno de desarrollo hasta la implementación de funciones avanzadas que añaden profundidad y complejidad al juego.
 
+### Sesion 2 28 febrero
+
+clase
+
+### Sesion 3 28 febrero
+
+#### micro sesion 1
+
+#include <stdio.h>
+
+# define V 21
+
+# define H 75
+
+void inicio (char campo [V] [H], int pelX,int pelY,int inijug,int finjug, int iniia,int finia);
+
+void borde (char campo[V] [H]);
+
+void raqjug (char campo [V][H], int inijug, int finjug);
+
+void raqia (char campo[V]{H], int iniia, int finia);
+
+void pel (char campo [V][H], int pelX , int pelY);
+
+int main () {
+
+int pelX,pelY inijug,finjug,iniia,finia;
+
+char campo [V] [H];
+
+pelX= 37;
+
+pelY= 10;
+
+inijug= 8;
+
+finjug= 12;
+
+
+iniia = 8;
+
+finia = 12;
+
+inicio (campo,pelX,pelY,inijug,finjug,iniia,finia);
+
+leercamp(campo);
+
+system ("pause");
+
+return 0;
+}
+
+void inicio (char campo [V] [H], int pelX,int pelY,int inijug,int finjug, int iniia,int finia) {
+
+borde (campo);
+
+raqjug(campo,inijug,finjug);
+
+raqia (campo, iniia,finjug);
+
+pel (campo, pelX, pelY); 
+
+}
+
+void borde (char campo[V] [H]) {
+
+int i,j; 
+
+for (i = 0; i< v; i++){
+
+for (j= 0; j<H; j++) {
+
+if (i == 0||i== V-1) {
+
+campo [i] [j] =  "-";
+
+}
+else if (j == 0 || j == H-1) {
+
+campo [i][j] = "|";
+
+}
+
+else{
+
+campo [i][j]= " ";
+
+}
+
+}
+
+}
+
+}
+
+void raqjug (char campo [V][H], int inijug, int finjug){
+
+int i,j;
+
+for (i = inijug; 1<= finjug; i++){
+
+for (j= 2; j<=3; j++){
+
+campo[i][j]= "x";
+}
+
+}
+
+}
+void raqia (char campo[V]{H], int iniia, int finia){
+
+int i,j;
+
+for (i= iniia; i<= finia; i++){
+
+for (j=H -4; j<= H - 3; j++) {
+
+campo [i][j]= "x";
+
+}
+
+}
+
+}
+
+void pel (char campo [V][H], int pelX , int pelY){
+
+campo [pelY][pelX] = "O";
+
+}
+
+void leercamp (char campo [V][H]){
+
+int i=j;
+
+for (i=0; i < V; i++) {
+
+for (j = 0; j<H; j++) {
+
+printf ("%c", campo[i][j]);
+
+}
+
+printf("/n");
+
+}
+
+} 
+ 
+
+Se empezo con la tarea de construir el codigo en pong y lo primero que hice fue imprimir el campo, las raquetas y pelota
+
+
+Se definen constantes simbólicas V y H para representar las dimensiones vertical y horizontal del campo de juego. A continuación, se declaran las variables pelX, pelY, inijug, finjug, iniia, y finia, las cuales se utilizan para gestionar la posición de la pelota y las raquetas. Además, se crea un array bidimensional llamado campo para representar el tablero del juego.
+
+#### micro sesion 2 
+
+inicia con la asignación de valores iniciales a las variables, como la posición de la pelota y las dimensiones de las raquetas. Luego, se llama a la función inicio que recibe el campo y las posiciones iniciales, y a su vez, invoca otras funciones (borde, raqjug, raqia, y pel) para establecer la estructura básica del juego.
+
+#### micro sesion 3
+
+La función inicio se encarga de inicializar el campo de juego mediante la llamada a las funciones borde, raqjug, raqia, y pel. La función borde establece los límites del campo, marcando los bordes con "-", "|", y dejando el interior como espacios en blanco. Las funciones raqjug y raqia colocan las raquetas del jugador y de la inteligencia artificial respectivamente, y la función pel sitúa la pelota en el campo.
+
+#### micro sesion 4
+
+La función borde crea los límites del campo de juego. Utiliza dos bucles anidados para iterar sobre cada posición del array bidimensional campo. Se asignan valores específicos en las posiciones correspondientes para representar el borde exterior con "-" y "|", mientras que el interior se llena con espacios en blanco.
+
+#### micro sesion 5
+
+La función leercamp se encarga de imprimir en la consola el estado actual del campo de juego. Utiliza dos bucles anidados para recorrer cada posición del array bidimensional campo y utiliza la función printf para mostrar cada carácter. Se imprime cada fila del campo seguida de un salto de línea ("/n").
+
+*Este codigo es de prueba y podrian darse cambios o cambiar completamente durante el proceso*
 
