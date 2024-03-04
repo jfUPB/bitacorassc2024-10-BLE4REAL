@@ -290,3 +290,65 @@ La función leercamp se encarga de imprimir en la consola el estado actual del c
 
 *Este codigo es de prueba y podrian darse cambios o cambiar completamente durante el proceso*
 
+## Semana 7
+
+### Sesion 1 4 marzo
+
+#### micro sesion 1
+
+sobre el mismo codigo de la semana pasada se trabaja sobre el 
+
+Inclusión de bibliotecas:
+
+
+#include <stdio.h>
+#include <SDL.h>
+Aquí, se están incluyendo las bibliotecas necesarias. stdio.h es para las funciones de entrada/salida estándar, y SDL.h es para la biblioteca SDL.
+
+Definición de la función de intercambio:
+
+
+void fuctionSwap(int* a, int* b) {
+
+   int temp = *a;
+   *a = *b;
+   *b = temp;
+}
+Esta función toma dos punteros a enteros como parámetros y realiza un intercambio de valores entre las variables a las que apuntan.
+
+Función principal (main):
+
+
+int main(int argc, char* argv[]) {
+
+   SDL_Init(SDL_INIT_EVERYTHING);
+    
+   printf("hello IDED\n");
+
+   int a = 10;
+   int b = 20;
+
+   printf("a:%d - b:%d\n", a, b);
+   
+   fuctionSwap(&a, &b);
+   
+   printf("a:%d - b:%d\n", a, b);
+
+   SDL_Quit();
+
+   return 0;
+}
+
+SDL_Init(SDL_INIT_EVERYTHING);: Inicializa la biblioteca SDL, preparándola para su uso.
+
+printf("hello IDED\n");: Imprime un mensaje en la consola.
+
+Se declaran dos variables enteras a y b con valores iniciales de 10 y 20.
+
+printf("a:%d - b:%d\n", a, b);: Imprime los valores iniciales de a y b.
+
+fuctionSwap(&a, &b);: Llama a la función fuctionSwap para intercambiar los valores de a y b.
+
+printf("a:%d - b:%d\n", a, b);: Imprime los valores después del intercambio.
+
+SDL_Quit();: Cierra y libera los recursos utilizados por SDL.
