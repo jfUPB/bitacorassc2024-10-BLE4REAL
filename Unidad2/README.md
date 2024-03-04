@@ -339,6 +339,8 @@ int main(int argc, char* argv[]) {
    return 0;
 }
 
+#### micro sesion 2
+
 SDL_Init(SDL_INIT_EVERYTHING);: Inicializa la biblioteca SDL, preparándola para su uso.
 
 printf("hello IDED\n");: Imprime un mensaje en la consola.
@@ -352,3 +354,13 @@ fuctionSwap(&a, &b);: Llama a la función fuctionSwap para intercambiar los valo
 printf("a:%d - b:%d\n", a, b);: Imprime los valores después del intercambio.
 
 SDL_Quit();: Cierra y libera los recursos utilizados por SDL.
+
+#### micro sesion 3
+
+Los punteros en el código tienen un papel fundamental en la función functionSwap al permitir el intercambio de valores entre dos variables.
+
+#### micro sesion 4
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/a2a05b8c-7ac1-42e4-ae21-f94d76788386)
+
+se imprimio el diseño del tablero de pong, a continuacion se va a seguir trabajando para que se peuda jugar
