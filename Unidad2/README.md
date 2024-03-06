@@ -494,3 +494,4 @@ Se utiliza sleep(10) para pausar la ejecución del programa durante 10 milisegun
 El bucle do-while continúa mientras gol sea igual a 0. La condición de salida se determinará por la lógica interna del juego, que no está presente en el código proporcionado.
 
 
+
