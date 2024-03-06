@@ -364,3 +364,133 @@ Los punteros en el código tienen un papel fundamental en la función functionSw
 ![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/a2a05b8c-7ac1-42e4-ae21-f94d76788386)
 
 se imprimio el diseño del tablero de pong, a continuacion se va a seguir trabajando para que se peuda jugar
+
+### Sesion 2 6 marzo
+
+#### micro sesion 1
+
+
+ariables Globales:
+
+Son declaradas fuera de cualquier función o bloque de código.
+Tienen un alcance global, lo que significa que pueden ser accedidas desde cualquier parte del programa, incluyendo funciones, clases u otros bloques de código.
+
+#include <stdio.h>
+
+// Declaración de variable global
+int global_variable = 10;
+
+void func() {
+    // Acceso a la variable global desde una función
+    
+   printf("Valor de la variable global: %d\n", global_variable);
+}
+
+int main() {
+    // Acceso a la variable global desde la función principal
+    
+   printf("Valor de la variable global desde main: %d\n", global_variable);
+
+   // Llamada a la función que utiliza la variable global
+    func();
+
+   return 0;
+}
+
+
+Variables Locales:
+
+Son declaradas dentro de una función o un bloque de código específico.
+Tienen un alcance local, lo que significa que solo pueden ser accedidas dentro de la función o el bloque de código en el que fueron definidas.
+Las variables locales pueden tener el mismo nombre en diferentes funciones sin causar conflictos, ya que cada función tiene su propio ámbito.
+
+#include <stdio.h>
+
+void func() {
+    // Declaración de variable local
+    int local_variable = 5;
+
+   // Acceso a la variable local dentro de la función
+    printf("Valor de la variable local: %d\n", local_variable);
+}
+
+int main() {
+    // Intentar acceder a la variable local fuera de la función causará un error
+    
+   // printf("Intento de acceder a la variable local desde main: %d\n", local_variable); // Esto causará un error
+
+   // Llamada a la función que utiliza la variable local
+    func();
+
+   return 0;
+}
+
+#### mmicro sesion 2
+
+Game Loop (Bucle de Juego):
+
+Un bucle de juego es una estructura repetitiva en un programa de videojuegos que se encarga de ejecutar continuamente las acciones necesarias para que el juego funcione. Está compuesto típicamente por tres fases: actualización del estado del juego, renderizado de la salida gráfica y gestión de la entrada del usuario. Este ciclo se repite continuamente mientras el juego está en ejecución
+
+
+Delta Time:
+
+Delta time (o tiempo delta) es la medida del tiempo transcurrido entre dos actualizaciones sucesivas en un programa de simulación o juego. Se utiliza para realizar cálculos basados en el tiempo, como la simulación de movimiento y animaciones, de manera que el rendimiento del juego sea consistente en diferentes sistemas y velocidades de hardware.
+
+Variables Privadas:
+
+En el contexto de la programación, variables privadas son aquellas que solo pueden ser accedidas y modificadas dentro de un ámbito específico, como una función, un bloque de código o, en el caso de la programación orientada a objetos, una clase. Este concepto de privacidad ayuda a encapsular y proteger datos, limitando su acceso directo desde otras partes del programa.
+
+#### micro sesion 3
+void gameloop(char campo[V][H], int pelX, int pelY, int inijug, int finjug, int iniia, int finia, int modX, int modY, int modia) {
+
+   int gol;
+   
+   gol = 0;
+
+   do
+   
+   {
+   draw(campo);
+   
+   imput(campo, &pel, &pelY,&inijug, &finjug, &iniia,&finia,&modX,&modY,&modia);
+   
+   update();
+   
+   sleep(10);
+
+   } while (gol == 0);
+   
+}   
+gameloop: Esta función es el bucle principal del juego. Mientras la variable gol sea igual a 0, el juego continuará ejecutándose en un ciclo. Dentro del bucle, se llama a la función draw para dibujar el campo de juego, luego a input para manejar la entrada del usuario y finalmente a update para actualizar el estado del juego. Después de cada iteración, el programa espera 10 milisegundos antes de continuar con la siguiente iteración.
+
+#### micro sesion 4
+
+void draw(char campo[V][H]) {
+
+   system("cls");
+
+   leercamp(campo);
+
+}
+void imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int* iniia, int* finia, int* modX, int* modY, int* modia) {
+
+
+
+
+}
+
+Se declaró una variable llamada gol e inicializada en 0. Esta variable se usará como condición de salida para el bucle do-while. Mientras gol sea igual a 0, el bucle seguirá ejecutándose.
+
+Se inicia un bucle do-while. Esto asegura que el código dentro del bucle se ejecute al menos una vez antes de verificar la condición.
+
+Se llama a la función draw(campo). Esta función se encarga de dibujar el campo de juego.
+
+Se llama a la función input(campo, &pel, &pelY,&inijug, &finjug, &iniia,&finia,&modX,&modY,&modia). Aquí debería manejarse la entrada del usuario, pero la implementación específica está ausente en tu código (ya que la función input está vacía).
+
+Se llama a la función update(). Esta función debería actualizar el estado del juego, aunque la implementación exacta también está ausente.
+
+Se utiliza sleep(10) para pausar la ejecución del programa durante 10 milisegundos. Esto puede ser para controlar la velocidad del juego.
+
+El bucle do-while continúa mientras gol sea igual a 0. La condición de salida se determinará por la lógica interna del juego, que no está presente en el código proporcionado.
+
+
