@@ -493,5 +493,140 @@ Se utiliza sleep(10) para pausar la ejecución del programa durante 10 milisegun
 
 El bucle do-while continúa mientras gol sea igual a 0. La condición de salida se determinará por la lógica interna del juego, que no está presente en el código proporcionado.
 
+### SESION 3 6 marzo
+
+#### micro sesion 1
+gameloop y draw
+
+gameloop: Se establece el bucle principal del juego (do-while). Se inicializa gol en 0. Mientras gol sea 0, el bucle ejecuta draw, imput y update. La ejecución del bucle continúa hasta que gol no sea 0.
+
+draw: Limpia la pantalla y llama a leercamp para mostrar el estado actual del campo de juego.
+
+void gameloop(char campo[V][H], int pelX, int pelY, int inijug, int finjug, int iniia, int finia, int modX, int modY, int modia) {
+    int gol;
+    gol = 0;
+
+    do {
+        draw(campo);
+        imput(campo, &pel, &pelY,&inijug, &finjug, &iniia,&finia,&modX,&modY,&modia,&gol);
+        update();
+        sleep(10);
+
+    } while (gol == 0);
+}   
+
+void draw(char campo[V][H]) {
+    system("cls");
+    leercamp(campo);
+}
+
+#### micro sesion 2
+
+Micro Sesión 2: imput
+
+La función imput parece haber sido nombrada incorrectamente (debería ser input). Ignorando eso, la función maneja la lógica de la entrada del juego.
+
+Si la posición de la pelota (pelY) es 1 o V - 2, invierte modY.
+
+Si la posición de la pelota (pelX) es 1 o H - 2, invierte gol.
+
+Si la posición de la pelota (pelX) es 4, verifica si toca al jugador (inijug a finjug). Si sí, invierte modX.
+
+Si la posición de la pelota (pelX) es H - 5, verifica si toca a la inteligencia artificial (iniia a finia). Si sí, invierte modX.
+
+oid imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int* iniia, int* finia, int* modX, int* modY, int* modia, int* gol) {
+    int i;
+
+    if (pelY == 1 || pelY == V - 2) {
+        *modY *= -1; 
+    }
+    if (pelX == 1 || pelX == H - 2) {
+        *gol *= -1;
+    }
+
+    if (pelX == 4) {
+        for (i = (*inijug); i <= (*finjug); i++) {
+            if (i == pelY) {
+                *modX *= -1;
+            }
+        }
+    }
+
+    if (pelX == H - 5) {
+        for (i = (*iniia); i <= (*finia); i++) {
+            if (i == (*pelY)) {
+                *modX *= -1;
+            }
+        }
+    }
+}
+
+#### micro sesion 3
+
+Micro Sesión 3: gameloop - Continuación
+
+El bucle do-while en gameloop sigue ejecutándose mientras gol sea 0.
+
+En cada iteración, se llama a draw para actualizar la pantalla, luego a input para manejar la entrada del usuario, y finalmente a update para actualizar el estado del juego.
+
+Después de cada iteración, el programa espera 10 milisegundos (sleep(10)) antes de continuar con la siguiente iteración del bucle.
+
+do {
+    draw(campo);
+    imput(campo, &pel, &pelY,&inijug, &finjug, &iniia,&finia,&modX,&modY,&modia,&gol);
+    update();
+    sleep(10);
+} while (gol == 0);
+
+
+#### micro sesion 4
+
+Micro Sesión 4: input - Lógica de Rebotes y Goles
+
+input maneja los rebotes de la pelota en los bordes verticales e invierte la dirección vertical (modY) en consecuencia.
+
+También verifica si la pelota toca los bordes horizontales, invirtiendo gol en caso afirmativo.
+
+Si la pelota está en la posición pelX == 4, verifica si toca al jugador (inijug a finjug) y, en caso afirmativo, invierte modX.
+
+Si la pelota está en la posición pelX == H - 5, verifica si toca a la inteligencia artificial (iniia a finia) y, en caso afirmativo, invierte modX.
+
+void imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int* iniia, int* finia, int* modX, int* modY, int* modia, int* gol) {
+    int i;
+
+    if (pelY == 1 || pelY == V - 2) {
+        *modY *= -1; 
+    }
+    if (pelX == 1 || pelX == H - 2) {
+        *gol *= -1;
+    }
+
+    if (pelX == 4) {
+        for (i = (*inijug); i <= (*finjug); i++) {
+            if (i == pelY) {
+                *modX *= -1;
+            }
+        }
+    }
+
+    if (pelX == H - 5) {
+        for (i = (*iniia); i <= (*finia); i++) {
+            if (i == (*pelY)) {
+                *modX *= -1;
+            }
+        }
+    }
+}
+
+#### micro sesion 5
+
+El juego tiene un bucle principal (gameloop) que controla la lógica del juego hasta que se cumple alguna condición de salida (gol != 0).
+
+draw se encarga de actualizar la pantalla y mostrar el estado actual del campo.
+
+input maneja la lógica de la entrada del usuario, incluyendo rebotes de la pelota, goles y cambios en la dirección de la pelota al tocar jugadores o la inteligencia artificial.
+
+El código podría necesitar ajustes y extensiones para una funcionalidad de juego completa.
+
 
 
