@@ -858,8 +858,301 @@ int main(int argc, char* args[]) {
     return 0;
 }
 
+### SESION 2 13 MARZO
 
 
+#### Micro sesion 1
+
+
+La biblioteca SDL_ttf. SDL_ttf es una extensión de SDL 2 que permite el uso de fuentes TrueType (TTF) para renderizar texto en las aplicaciones. A
+
+Descargar SDL_ttf:
+Puedes encontrar la biblioteca SDL_ttf en el sitio oficial de SDL: https://www.libsdl.org/projects/SDL_ttf/
+
+Compilar e instalar:
+Después de descargar SDL_ttf, descomprime el archivo y sigue las instrucciones en el archivo README o INSTALL que se incluye. Generalmente, el proceso de instalación implica ejecutar comandos como ./configure, make y make install en la terminal.
+
+Enlazar con tu proyecto:
+se debe asegurar de enlazar tu proyecto con la biblioteca SDL_ttf. Esto generalmente se hace agregando la opción -lSDL2_ttf al compilar tu programa. Además, incluye los encabezados necesarios en tu código fuente.
+
+
+#### Micro sesion 2
+Cargar una fuente TTF en tu proyecto:
+se debe asegurar de tener una fuente TrueType (TTF) en un formato compatible (por ejemplo, .ttf). Puedes descargar fuentes TTF de sitios como Google Fonts.
+
+
+#### Micro sesion 3
+
+#include <SDL.h>
+#include <SDL_ttf.h>
+
+int main(int argc, char* argv[]) {
+    // Inicializar SDL
+    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+        // Manejar el error
+        return 1;
+    }
+
+    // Inicializar SDL_ttf
+    if (TTF_Init() < 0) {
+        // Manejar el error
+        SDL_Quit();
+        return 1;
+    }
+
+    // Crear una ventana
+    SDL_Window* window = SDL_CreateWindow("SDL 2 Text with TTF", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN);
+    if (window == nullptr) {
+        // Manejar el error
+        TTF_Quit();
+        SDL_Quit();
+        return 1;
+    }
+
+    // Obtener el renderizador
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    if (renderer == nullptr) {
+        // Manejar el error
+        SDL_DestroyWindow(window);
+        TTF_Quit();
+        SDL_Quit();
+        return 1;
+    }
+
+    // Cargar la fuente TTF
+    TTF_Font* font = TTF_OpenFont("ruta/a/tu/fuente.ttf", 24);
+    if (font == nullptr) {
+        // Manejar el error
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyWindow(window);
+        TTF_Quit();
+        SDL_Quit();
+        return 1;
+    }
+
+    // Crear una superficie con el texto
+    SDL_Color textColor = {255, 255, 255}; // Color: blanco
+    SDL_Surface* surface = TTF_RenderText_Solid(font, "Hola, mundo!", textColor);
+    if (surface == nullptr) {
+        // Manejar el error
+        TTF_CloseFont(font);
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyWindow(window);
+        TTF_Quit();
+        SDL_Quit();
+        return 1;
+    }
+
+    // Crear una textura desde la superficie
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
+    if (texture == nullptr) {
+        // Manejar el error
+        SDL_FreeSurface(surface);
+        TTF_CloseFont(font);
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyWindow(window);
+        TTF_Quit();
+        SDL_Quit();
+        return 1;
+    }
+
+    // Limpiar la superficie, ya que no se necesita después de crear la textura
+    SDL_FreeSurface(surface);
+
+    // Obtener las dimensiones de la textura
+    int textWidth, textHeight;
+    SDL_QueryTexture(texture, nullptr, nullptr, &textWidth, &textHeight);
+
+    // Definir la posición del texto en la pantalla
+    SDL_Rect textRect = {100, 100, textWidth, textHeight};
+
+    // Renderizar la textura en la pantalla
+    SDL_RenderCopy(renderer, texture, nullptr, &textRect);
+
+    // Presentar el renderizador
+    SDL_RenderPresent(renderer);
+
+    // Esperar antes de cerrar la ventana
+    SDL_Delay(3000);
+
+    // Liberar recursos
+    SDL_DestroyTexture(texture);
+    TTF_CloseFont(font);
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    TTF_Quit();
+    SDL_Quit();
+
+    return 0;
+}
+
+#### Micro sesion 4
+
+
+Inclusión de Cabeceras:
+Se incluyen las cabeceras necesarias de SDL y SDL_ttf.
+
+Inicialización de SDL y SDL_ttf:
+Se inicializan las bibliotecas SDL y SDL_ttf. En caso de error, el programa manejará la situación y saldrá con un código de error.
+
+Creación de la Ventana y el Renderizador:
+Se crea una ventana y un renderizador utilizando SDL. En caso de error en la creación, se maneja adecuadamente.
+
+Carga de la Fuente TTF:
+Se carga una fuente TTF. Es importante proporcionar la ruta correcta al archivo de fuente.
+
+Renderización del Texto en una Superficie:
+Se renderiza el texto "Hola, mundo!" en una superficie utilizando la fuente cargada y se especifica un color blanco.
+
+Creación de una Textura desde la Superficie:
+Se crea una textura desde la superficie para facilitar su renderización en la ventana.
+
+Renderización de la Textura en la Ventana:
+Se renderiza la textura en la ventana en una posición específica (en este caso, (100, 100)).
+
+Presentación del Renderizador:
+Se presenta el renderizador para que los cambios en la ventana sean visibles.
+
+Espera antes de Cerrar la Ventana:
+Se añade una pausa de tres segundos antes de cerrar la ventana y finalizar la aplicación.
+
+Liberación de Recursos y Cierre de SDL y SDL_ttf:
+Finalmente, se liberan los recursos utilizados y se cierran las bibliotecas SDL y SDL_ttf.
+
+Este código proporciona una estructura básica para mostrar texto en una ventana utilizando SDL 2 y SDL_ttf, destacando la importancia de manejar errores y ajustar la ruta de la fuente según sea necesario.
+
+
+### SESION 3 13 MARZO
+
+#### micro sesion 1
+
+En esta primera sesión, nos adentramos en los fundamentos de la programación en C utilizando el entorno de desarrollo Visual Studio. Creamos un proyecto básico de C++ Windows Console y escribimos un programa sencillo para imprimir "Hello IDED" en la consola. Aprendimos a compilar y ejecutar el programa, utilizando tanto la opción de correr sin depurar (Ctrl + F5) como la depuración (F5). Se exploró el concepto de breakpoints para entender la ejecución paso a paso, y se sugirió la búsqueda de tutoriales de depuración en YouTube.
+
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    printf("Hello IDED\n");
+    return 0;
+}
+
+#### micro sesion 2
+
+En la segunda sesión, nos sumergimos en el mundo de las bibliotecas externas, centrándonos en SDL2. Creamos otro proyecto de C++ Windows Console en Visual Studio y procedimos a descargar e instalar SDL2. Aprendimos la importancia de incluir los archivos de cabecera (.h) y vincular los archivos de biblioteca (.lib) en el proyecto. Configuramos las rutas en Visual Studio para facilitar el proceso de compilación y construimos un programa básico que inicializa SDL2.
+
+c
+Copy code
+#include <SDL.h>
+
+int main() {
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+        // Manejar el error
+        return -1;
+    }
+
+    // Resto del código de inicialización de SDL2
+
+    SDL_Quit();
+    return 0;
+}
+
+#### micro sesion 3
+
+Durante la tercera sesión, avanzamos en el desarrollo de nuestro proyecto utilizando SDL2. Implementamos la manipulación de gráficos básicos, como la creación de una ventana y la renderización de formas simples. Introducimos el manejo de eventos para capturar la interacción del usuario con el teclado y el ratón.
+
+c
+Copy code
+#include <SDL.h>
+
+int main() {
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+        // Manejar el error
+        return -1;
+    }
+
+    SDL_Window* window = SDL_CreateWindow("Mi Ventana", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+    SDL_RenderClear(renderer);
+
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+    SDL_RenderDrawLine(renderer, 0, 0, 800, 600);
+
+    SDL_RenderPresent(renderer);
+
+    SDL_Delay(2000);  // Esperar 2 segundos antes de cerrar la ventana
+
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+    return 0;
+}
+
+#### micro sesion 4
+
+En la cuarta sesión, nos sumergimos en conceptos más avanzados de programación en C. Exploramos las estructuras de control, como if-else y bucles (for, while), y discutimos la importancia de escribir funciones modulares y reutilizables. Creamos un programa que utiliza estas estructuras para realizar operaciones matemáticas simples.
+
+c
+Copy code
+#include <stdio.h>
+
+// Declaración de función
+int suma(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1 = 5, num2 = 10;
+    
+    if (num1 < num2) {
+        printf("La suma es: %d\n", suma(num1, num2));
+    } else {
+        printf("El primer número no es menor al segundo.\n");
+    }
+
+    return 0;
+}
+
+#### micro sesion 5
+
+
+Bitácora: Sesión 5 - Trabajo con Archivos y Estructuras de Datos Básicas
+
+En nuestra quinta sesión, abordamos la manipulación de archivos y estructuras de datos básicas en C. Desarrollamos un programa que lee y escribe en archivos, así como también implementamos estructuras de datos como arreglos y listas sencillas.
+
+c
+Copy code
+#include <stdio.h>
+
+struct Persona {
+    char nombre[50];
+    int edad;
+};
+
+int main() {
+    // Trabajar con archivos
+    FILE* archivo = fopen("datos.txt", "w");
+    fprintf(archivo, "Hola, este es un archivo de texto.\n");
+    fclose(archivo);
+
+    // Trabajar con estructuras
+    struct Persona persona1;
+    strcpy(persona1.nombre, "Juan");
+    persona1.edad = 25;
+
+    printf("Nombre: %s, Edad: %d\n", persona1.nombre, persona1.edad);
+
+    // Uso de arreglos
+    int numeros[5] = {1, 2, 3, 4, 5};
+
+    for (int i = 0; i < 5; ++i) {
+        printf("%d ", numeros[i]);
+    }
+
+    return 0;
+}
 
 
 
