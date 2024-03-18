@@ -125,6 +125,7 @@ Con estas configuraciones, el programa debería saber dónde encontrar los encab
 
 #### micro sesion 1
 
+``` c
 #include <stdio.h>
 
  define V 21
@@ -265,7 +266,7 @@ printf("/n");
 }
 
 } 
- 
+``` 
 
 Se empezo con la tarea de construir el codigo en pong y lo primero que hice fue imprimir el campo, las raquetas y pelota
 
@@ -307,7 +308,7 @@ Aquí, se están incluyendo las bibliotecas necesarias. stdio.h es para las func
 
 Definición de la función de intercambio:
 
-
+``` c
 void fuctionSwap(int* a, int* b) {
 
    int temp = *a;
@@ -338,8 +339,10 @@ int main(int argc, char* argv[]) {
 
    return 0;
 }
+```
 
 #### micro sesion 2
+
 
 SDL_Init(SDL_INIT_EVERYTHING);: Inicializa la biblioteca SDL, preparándola para su uso.
 
@@ -374,7 +377,7 @@ ariables Globales:
 
 Son declaradas fuera de cualquier función o bloque de código.
 Tienen un alcance global, lo que significa que pueden ser accedidas desde cualquier parte del programa, incluyendo funciones, clases u otros bloques de código.
-
+``` c
 #include <stdio.h>
 
 // Declaración de variable global
@@ -396,7 +399,7 @@ int main() {
 
    return 0;
 }
-
+```
 
 Variables Locales:
 
@@ -404,6 +407,7 @@ Son declaradas dentro de una función o un bloque de código específico.
 Tienen un alcance local, lo que significa que solo pueden ser accedidas dentro de la función o el bloque de código en el que fueron definidas.
 Las variables locales pueden tener el mismo nombre en diferentes funciones sin causar conflictos, ya que cada función tiene su propio ámbito.
 
+``` c
 #include <stdio.h>
 
 void func() {
@@ -424,6 +428,7 @@ int main() {
 
    return 0;
 }
+```
 
 #### mmicro sesion 2
 
@@ -464,7 +469,7 @@ void gameloop(char campo[V][H], int pelX, int pelY, int inijug, int finjug, int 
 gameloop: Esta función es el bucle principal del juego. Mientras la variable gol sea igual a 0, el juego continuará ejecutándose en un ciclo. Dentro del bucle, se llama a la función draw para dibujar el campo de juego, luego a input para manejar la entrada del usuario y finalmente a update para actualizar el estado del juego. Después de cada iteración, el programa espera 10 milisegundos antes de continuar con la siguiente iteración.
 
 #### micro sesion 4
-
+``` c
 void draw(char campo[V][H]) {
 
    system("cls");
@@ -474,10 +479,8 @@ void draw(char campo[V][H]) {
 }
 void imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int* iniia, int* finia, int* modX, int* modY, int* modia) {
 
-
-
-
 }
+```
 
 Se declaró una variable llamada gol e inicializada en 0. Esta variable se usará como condición de salida para el bucle do-while. Mientras gol sea igual a 0, el bucle seguirá ejecutándose.
 
@@ -502,6 +505,7 @@ gameloop: Se establece el bucle principal del juego (do-while). Se inicializa go
 
 draw: Limpia la pantalla y llama a leercamp para mostrar el estado actual del campo de juego.
 
+``` c
 void gameloop(char campo[V][H], int pelX, int pelY, int inijug, int finjug, int iniia, int finia, int modX, int modY, int modia) {
     int gol;
     gol = 0;
@@ -519,6 +523,7 @@ void draw(char campo[V][H]) {
     system("cls");
     leercamp(campo);
 }
+```
 
 #### micro sesion 2
 
@@ -534,63 +539,7 @@ Si la posición de la pelota (pelX) es 4, verifica si toca al jugador (inijug a 
 
 Si la posición de la pelota (pelX) es H - 5, verifica si toca a la inteligencia artificial (iniia a finia). Si sí, invierte modX.
 
-oid imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int* iniia, int* finia, int* modX, int* modY, int* modia, int* gol) {
-    int i;
-
-    if (pelY == 1 || pelY == V - 2) {
-        *modY *= -1; 
-    }
-    if (pelX == 1 || pelX == H - 2) {
-        *gol *= -1;
-    }
-
-    if (pelX == 4) {
-        for (i = (*inijug); i <= (*finjug); i++) {
-            if (i == pelY) {
-                *modX *= -1;
-            }
-        }
-    }
-
-    if (pelX == H - 5) {
-        for (i = (*iniia); i <= (*finia); i++) {
-            if (i == (*pelY)) {
-                *modX *= -1;
-            }
-        }
-    }
-}
-
-#### micro sesion 3
-
-Micro Sesión 3: gameloop - Continuación
-
-El bucle do-while en gameloop sigue ejecutándose mientras gol sea 0.
-
-En cada iteración, se llama a draw para actualizar la pantalla, luego a input para manejar la entrada del usuario, y finalmente a update para actualizar el estado del juego.
-
-Después de cada iteración, el programa espera 10 milisegundos (sleep(10)) antes de continuar con la siguiente iteración del bucle.
-
-do {
-    draw(campo);
-    imput(campo, &pel, &pelY,&inijug, &finjug, &iniia,&finia,&modX,&modY,&modia,&gol);
-    update();
-    sleep(10);
-} while (gol == 0);
-
-
-#### micro sesion 4
-
-Micro Sesión 4: input - Lógica de Rebotes y Goles
-
-input maneja los rebotes de la pelota en los bordes verticales e invierte la dirección vertical (modY) en consecuencia.
-
-También verifica si la pelota toca los bordes horizontales, invirtiendo gol en caso afirmativo.
-
-Si la pelota está en la posición pelX == 4, verifica si toca al jugador (inijug a finjug) y, en caso afirmativo, invierte modX.
-
-Si la pelota está en la posición pelX == H - 5, verifica si toca a la inteligencia artificial (iniia a finia) y, en caso afirmativo, invierte modX.
-
+``` c
 void imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int* iniia, int* finia, int* modX, int* modY, int* modia, int* gol) {
     int i;
 
@@ -617,6 +566,67 @@ void imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int
         }
     }
 }
+```
+
+#### micro sesion 3
+
+Micro Sesión 3: gameloop - Continuación
+
+El bucle do-while en gameloop sigue ejecutándose mientras gol sea 0.
+
+En cada iteración, se llama a draw para actualizar la pantalla, luego a input para manejar la entrada del usuario, y finalmente a update para actualizar el estado del juego.
+
+Después de cada iteración, el programa espera 10 milisegundos (sleep(10)) antes de continuar con la siguiente iteración del bucle.
+
+``` c
+do {
+    draw(campo);
+    imput(campo, &pel, &pelY,&inijug, &finjug, &iniia,&finia,&modX,&modY,&modia,&gol);
+    update();
+    sleep(10);
+} while (gol == 0);
+```
+
+#### micro sesion 4
+
+Micro Sesión 4: input - Lógica de Rebotes y Goles
+
+input maneja los rebotes de la pelota en los bordes verticales e invierte la dirección vertical (modY) en consecuencia.
+
+También verifica si la pelota toca los bordes horizontales, invirtiendo gol en caso afirmativo.
+
+Si la pelota está en la posición pelX == 4, verifica si toca al jugador (inijug a finjug) y, en caso afirmativo, invierte modX.
+
+Si la pelota está en la posición pelX == H - 5, verifica si toca a la inteligencia artificial (iniia a finia) y, en caso afirmativo, invierte modX.
+
+``` c
+void imput(char campo[V][H], int* pelX, int* pelY, int* inijug, int* finjug, int* iniia, int* finia, int* modX, int* modY, int* modia, int* gol) {
+    int i;
+
+    if (pelY == 1 || pelY == V - 2) {
+        *modY *= -1; 
+    }
+    if (pelX == 1 || pelX == H - 2) {
+        *gol *= -1;
+    }
+
+    if (pelX == 4) {
+        for (i = (*inijug); i <= (*finjug); i++) {
+            if (i == pelY) {
+                *modX *= -1;
+            }
+        }
+    }
+
+    if (pelX == H - 5) {
+        for (i = (*iniia); i <= (*finia); i++) {
+            if (i == (*pelY)) {
+                *modX *= -1;
+            }
+        }
+    }
+}
+```
 
 #### micro sesion 5
 
@@ -648,6 +658,7 @@ se enfocara en la función de renderizado y la destrucción de la ventana. La fu
 
 #### micro sesion 4 
 
+``` c
 #include <stdio.h>
 #include <SDL.h>
 
@@ -859,6 +870,7 @@ int main(int argc, char* args[]) {
 
     return 0;
 }
+```
 
 ### Sesión 2
 
@@ -883,6 +895,7 @@ se debe asegurar de tener una fuente TrueType (TTF) en un formato compatible (po
 
 #### Micro sesion 3
 
+``` c
 #include <SDL.h>
 #include <SDL_ttf.h>
 
@@ -985,6 +998,7 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+```
 
 #### Micro sesion 4
 
