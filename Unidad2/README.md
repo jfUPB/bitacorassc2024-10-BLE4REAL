@@ -628,7 +628,9 @@ input maneja la lógica de la entrada del usuario, incluyendo rebotes de la pelo
 
 El código podría necesitar ajustes y extensiones para una funcionalidad de juego completa.
 
-### SESION 1 11 marzo
+## Semana 8
+
+### Sesión 1
 
 #### micro sesion 1 
 
@@ -858,11 +860,9 @@ int main(int argc, char* args[]) {
     return 0;
 }
 
-### SESION 2 13 MARZO
-
+### Sesión 2
 
 #### Micro sesion 1
-
 
 La biblioteca SDL_ttf. SDL_ttf es una extensión de SDL 2 que permite el uso de fuentes TrueType (TTF) para renderizar texto en las aplicaciones. A
 
@@ -1021,28 +1021,26 @@ Finalmente, se liberan los recursos utilizados y se cierran las bibliotecas SDL 
 
 Este código proporciona una estructura básica para mostrar texto en una ventana utilizando SDL 2 y SDL_ttf, destacando la importancia de manejar errores y ajustar la ruta de la fuente según sea necesario.
 
-
-### SESION 3 13 MARZO
+### Sesión 3
 
 #### micro sesion 1
 
 En esta primera sesión, nos adentramos en los fundamentos de la programación en C utilizando el entorno de desarrollo Visual Studio. Creamos un proyecto básico de C++ Windows Console y escribimos un programa sencillo para imprimir "Hello IDED" en la consola. Aprendimos a compilar y ejecutar el programa, utilizando tanto la opción de correr sin depurar (Ctrl + F5) como la depuración (F5). Se exploró el concepto de breakpoints para entender la ejecución paso a paso, y se sugirió la búsqueda de tutoriales de depuración en YouTube.
 
-c
-Copy code
+``` c
 #include <stdio.h>
 
 int main() {
     printf("Hello IDED\n");
     return 0;
 }
+```
 
 #### micro sesion 2
 
 En la segunda sesión, nos sumergimos en el mundo de las bibliotecas externas, centrándonos en SDL2. Creamos otro proyecto de C++ Windows Console en Visual Studio y procedimos a descargar e instalar SDL2. Aprendimos la importancia de incluir los archivos de cabecera (.h) y vincular los archivos de biblioteca (.lib) en el proyecto. Configuramos las rutas en Visual Studio para facilitar el proceso de compilación y construimos un programa básico que inicializa SDL2.
 
-c
-Copy code
+``` c
 #include <SDL.h>
 
 int main() {
@@ -1056,13 +1054,13 @@ int main() {
     SDL_Quit();
     return 0;
 }
+```
 
 #### micro sesion 3
 
 Durante la tercera sesión, avanzamos en el desarrollo de nuestro proyecto utilizando SDL2. Implementamos la manipulación de gráficos básicos, como la creación de una ventana y la renderización de formas simples. Introducimos el manejo de eventos para capturar la interacción del usuario con el teclado y el ratón.
 
-c
-Copy code
+``` c
 #include <SDL.h>
 
 int main() {
@@ -1089,13 +1087,14 @@ int main() {
     SDL_Quit();
     return 0;
 }
+```
 
 #### micro sesion 4
 
 En la cuarta sesión, nos sumergimos en conceptos más avanzados de programación en C. Exploramos las estructuras de control, como if-else y bucles (for, while), y discutimos la importancia de escribir funciones modulares y reutilizables. Creamos un programa que utiliza estas estructuras para realizar operaciones matemáticas simples.
 
-c
-Copy code
+``` c
+
 #include <stdio.h>
 
 // Declaración de función
@@ -1114,6 +1113,7 @@ int main() {
 
     return 0;
 }
+```
 
 #### micro sesion 5
 
@@ -1122,8 +1122,7 @@ Bitácora: Sesión 5 - Trabajo con Archivos y Estructuras de Datos Básicas
 
 En nuestra quinta sesión, abordamos la manipulación de archivos y estructuras de datos básicas en C. Desarrollamos un programa que lee y escribe en archivos, así como también implementamos estructuras de datos como arreglos y listas sencillas.
 
-c
-Copy code
+``` c
 #include <stdio.h>
 
 struct Persona {
@@ -1153,6 +1152,7 @@ int main() {
 
     return 0;
 }
+```
 
 
 
