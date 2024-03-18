@@ -1168,5 +1168,107 @@ int main() {
 }
 ```
 
+### sesion 1 18 marzo
+
+#### micro sesion 1
+
+En esta microsesión, inicializaremos dos contadores para llevar la cuenta de las veces que la pelota toca los extremos superior e inferior de la pantalla. También cargaremos la fuente que se utilizará para renderizar los contadores.
 
 
+``` c
+Copy code
+// Inicialización de los contadores y la fuente
+int top_counter = 0; // Contador para pelotas que tocan el extremo superior
+int bottom_counter = 0; // Contador para pelotas que tocan el extremo inferior
+TTF_Font* font = NULL;
+
+int initialize_window(void) {
+    // Otras inicializaciones...
+
+    // Inicializar SDL_ttf
+    if (TTF_Init() < 0) {
+        fprintf(stderr, "Error initializing SDL_ttf.\n");
+        return FALSE;
+    }
+
+    // Cargar la fuente
+    font = TTF_OpenFont("Roboto-ThinItalic.ttf", 24);
+    if (!font) {
+        fprintf(stderr, "Error loading font.\n");
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
+
+```
+
+#### micro sesion  2
+
+En esta microsesión, actualizaremos los contadores en función de si la pelota toca los extremos superior o inferior de la pantalla, y luego los renderizaremos en la ventana del juego.
+
+```c
+Copy code
+void update(void) {
+    // Otras actualizaciones...
+
+    // Actualizar contadores si la pelota toca los extremos superior o inferior
+    if (ball.y <= 0) {
+        top_counter++;
+        ball.vel_y = -ball.vel_y;
+    }
+    if (ball.y + ball.height >= WINDOW_HEIGHT) {
+        bottom_counter++;
+        ball.vel_y = -ball.vel_y;
+    }
+
+    // Resto del código de actualización...
+}
+
+void render(void) {
+    // Otras renderizaciones...
+
+    // Renderizar contadores
+    SDL_Color textColor = {255, 255, 255}; // Color blanco
+
+    // Contador superior (derecha)
+    char top_counter_text[16];
+    snprintf(top_counter_text, sizeof(top_counter_text), "%d", top_counter);
+    SDL_Surface* topCounterSurface = TTF_RenderText_Blended(font, top_counter_text, textColor);
+    SDL_Texture* topCounterTexture = SDL_CreateTextureFromSurface(renderer, topCounterSurface);
+
+    // Posición y tamaño del contador superior
+    SDL_Rect topCounterRect;
+    topCounterRect.x = WINDOW_WIDTH - topCounterSurface->w - 50;
+    topCounterRect.y = 50;
+    topCounterRect.w = topCounterSurface->w;
+    topCounterRect.h = topCounterSurface->h;
+
+    // Renderizar el contador superior en la ventana
+    SDL_RenderCopy(renderer, topCounterTexture, NULL, &topCounterRect);
+
+    // Liberar recursos del contador superior
+    SDL_FreeSurface(topCounterSurface);
+    SDL_DestroyTexture(topCounterTexture);
+
+    // Resto de renderización de contadores...
+}
+```
+
+#### micro sesion 3
+Inicialización de SDL_ttf: Se inicializó SDL_ttf utilizando la función TTF_Init(). Esta inicialización es crucial para poder cargar y utilizar fuentes TrueType en el juego.
+
+Carga de la fuente: Se utilizó la función TTF_OpenFont() para cargar una fuente TrueType desde un archivo .ttf. En este caso, se cargó la fuente "Roboto-ThinItalic.ttf" con un tamaño de 24 puntos. La fuente se asignó a una variable del tipo TTF_Font* para su posterior uso en el renderizado de texto.
+
+Renderizado de texto: Se utilizó la función TTF_RenderText_Blended() para renderizar el texto en una superficie SDL. Esta función crea una superficie que contiene el texto renderizado en la fuente y el color especificados. En este proyecto, se renderizó el texto de los contadores que muestran las veces que la pelota toca los extremos superior e inferior de la pantalla.
+
+Creación de texturas: Después de renderizar el texto en una superficie, se creó una textura SDL a partir de esa superficie utilizando SDL_CreateTextureFromSurface(). Esto convierte el texto renderizado en una textura que puede ser dibujada en el renderizador.
+
+Dibujado del texto en la pantalla: Utilizando las funciones SDL_RenderCopy() y SDL_RenderPresent(), se dibujó la textura del texto en el renderizador y se presentó en la pantalla.
+
+Liberación de recursos: Al finalizar el juego, se liberaron los recursos asociados a la fuente utilizando TTF_CloseFont() y se realizó la limpieza de SDL_ttf con TTF_Quit().
+
+#### micro sesion 4
+
+En resumen, SDL_ttf se utilizó para cargar, renderizar y mostrar texto en el juego, lo que permitió agregar información visual al jugador, como los contadores de colisiones con los extremos de la pantalla.
