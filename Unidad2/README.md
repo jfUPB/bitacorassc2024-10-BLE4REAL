@@ -1272,3 +1272,66 @@ Liberación de recursos: Al finalizar el juego, se liberaron los recursos asocia
 #### micro sesion 4
 
 En resumen, SDL_ttf se utilizó para cargar, renderizar y mostrar texto en el juego, lo que permitió agregar información visual al jugador, como los contadores de colisiones con los extremos de la pantalla.
+
+
+### SESION 3 20 marzo
+
+#### micro sesion 1
+
+#### micro sesion 2
+
+#### micro sesion 3
+
+#### micro sesion 4
+
+
+### SESION 3 20 marzo
+
+#### micro sesion 1
+
+Agregué la verificación de los contadores en la función update():
+En la función update(), después de todas las operaciones de actualización, agregué un bloque de código para verificar si alguno de los contadores (top_counter o bottom_counter) ha alcanzado el valor de 10. Si alguno de los contadores llega a 10, establezco la variable game_is_running en FALSE, lo que hará que el bucle principal del juego se detenga y, por lo tanto, el programa se cierre.
+
+
+#### micro sesion 2
+Uso de la variable game_is_running:
+La variable game_is_running es una bandera que controla si el bucle principal del juego debe seguir ejecutándose o no. Cuando la bandera está establecida en FALSE, el bucle se detiene y el programa termina.
+
+Condición de cierre del programa:
+La condición para que el programa se cierre es que alguno de los contadores (top_counter o bottom_counter) llegue a 10. Esto se verifica en cada iteración de la función update(), por lo que el juego se cerrará inmediatamente después de que alguno de los contadores alcance ese valor.
+
+
+#### micro sesion 3
+la parte del código donde realicé la modificación para que el programa se cierre cuando alguno de los contadores (top_counter o bottom_counter) llegue a 10
+``` c
+// Verifica si alguno de los contadores llega a 10
+if (top_counter >= 10 || bottom_counter >= 10) {
+    game_is_running = FALSE; // Termina el juego si alguno de los contadores llega a 10
+}
+```
+#### micro sesion 4
+``` c
+while (game_is_running && (top_counter < 10 && bottom_counter < 10)) {
+        process_input();
+        update();
+        render();
+    }
+
+    destroy_window();
+    return 0;
+```
+En la línea while (game_is_running && (top_counter < 10 && bottom_counter < 10)) {, se ejecuta un bucle while que continúa mientras game_is_running sea verdadero y ambos contadores top_counter y bottom_counter sean menores que 10. Esto significa que el juego continuará ejecutándose mientras estas condiciones se cumplan.
+
+Dentro del bucle while, se llama a las funciones process_input(), update(), y render(), que se encargan de procesar la entrada del usuario, actualizar la lógica del juego, y renderizar los elementos en la pantalla, respectivamente. Estas funciones se ejecutan en cada iteración del bucle para mantener el juego en funcionamiento.
+
+Cuando el bucle while se detiene, significa que game_is_running se ha establecido como falso o alguno de los contadores (top_counter o bottom_counter) ha alcanzado 10. Esto detiene la ejecución del bucle y procede a la siguiente línea.
+
+Después del bucle while, se llama a la función destroy_window(), que se encarga de liberar los recursos utilizados por SDL y TTF, como la ventana, el renderer y la fuente.
+
+Finalmente, se devuelve 0 utilizando return 0;, lo que indica que el programa se ha ejecutado correctamente y termina la ejecución del programa.
+#### micro sesion 5
+se establece un bucle principal (while) que ejecuta el juego mientras game_is_running sea verdadero y los contadores de puntos (top_counter y bottom_counter) sean inferiores a 10. Dentro de este bucle, se procesa la entrada del usuario, se actualiza la lógica del juego y se renderiza la pantalla en cada iteración. Una vez que el juego finaliza (cuando game_is_running es falso o alguno de los contadores alcanza 10), se destruyen los recursos de la ventana y se devuelve 0, terminando la ejecución del programa.
+
+
+
+
