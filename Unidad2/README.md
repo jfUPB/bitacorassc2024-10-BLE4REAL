@@ -1274,16 +1274,116 @@ Liberación de recursos: Al finalizar el juego, se liberaron los recursos asocia
 En resumen, SDL_ttf se utilizó para cargar, renderizar y mostrar texto en el juego, lo que permitió agregar información visual al jugador, como los contadores de colisiones con los extremos de la pantalla.
 
 
-### SESION 3 20 marzo
+### SESION 2 20 marzo
 
 #### micro sesion 1
 
+se va a crear una ventana para poner la interfaz de inicio del juego.
+
+Inclusión de bibliotecas y definiciones de constantes:
+``` c
+#include <SDL2/SDL.h>
+
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 480
+```
+Aquí se incluye la biblioteca SDL (Simple DirectMedia Layer) necesaria para trabajar con ventanas y gráficos en SDL. También se definen constantes para el ancho y alto de las ventanas.
+
+Función main():
+``` c
+int main() {
+```
+Esta es la función principal del programa.
+
+``` c
+SDL_Window *window1 = NULL;
+    SDL_Window *window2 = NULL;
+    SDL_Renderer *renderer1 = NULL;
+    SDL_Renderer *renderer2 = NULL;
+```
+Se declaran punteros a las ventanas (window1 y window2) y a los renderizadores (renderer1 y renderer2). Estos punteros se inicializan en NULL.
+
+
 #### micro sesion 2
+Inicialización de SDL:
+c
+
+    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+        printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
+        return 1;
+    }
+Aquí se inicializa SDL, específicamente la parte relacionada con video. Si la inicialización falla, se imprime un mensaje de error y el programa termina.
+
+Creación de ventanas:
+c
+
+    window1 = SDL_CreateWindow("Window 1", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+    if (window1 == NULL) {
+        printf("Window could not be created! SDL_Error: %s\n", SDL_GetError());
+        return 1;
+    }
+Se crea la primera ventana con el título "Window 1", ancho y alto definidos por SCREEN_WIDTH y SCREEN_HEIGHT, respectivamente. Si la creación de la ventana falla, se imprime un mensaje de error y el programa termina. Esto mismo se repite para la segunda ventana (window2).
+
+Creación de renderizadores:
+c
+
+    renderer1 = SDL_CreateRenderer(window1, -1, SDL_RENDERER_ACCELERATED);
+    if (renderer1 == NULL) {
+        printf("Renderer could not be created! SDL_Error: %s\n", SDL_GetError());
+        return 1;
+    }
+Se crea un renderizador para la primera ventana. Si la creación falla, se imprime un mensaje de error y el programa termina. Esto mismo se repite para el segundo renderizador (renderer2).
+
+Loop principal:
+
 
 #### micro sesion 3
 
-#### micro sesion 4
+Loop principal:
+c
 
+    while (!quit) {
+        while (SDL_PollEvent(&e) != 0) {
+            if (e.type == SDL_QUIT) {
+                quit = 1;
+            }
+            // Manejar eventos para cada ventana según sea necesario
+            // Por ejemplo, puedes añadir manejo de eventos específico para cada ventana aquí
+        }
+El programa entra en un bucle principal. Dentro de este bucle, se manejan los eventos de SDL. Si se detecta un evento de salida (SDL_QUIT), se marca la variable quit como verdadera, lo que eventualmente terminará el bucle y el programa.
+
+Renderizado de las ventanas:
+c
+
+        // Renderizado de la primera ventana
+        SDL_SetRenderDrawColor(renderer1, 255, 255, 255, 255);
+        SDL_RenderClear(renderer1);
+        // Dibujar lo que necesites en la primera ventana
+        SDL_RenderPresent(renderer1);
+
+        // Renderizado de la segunda ventana
+        SDL_SetRenderDrawColor(renderer2, 255, 255, 255, 255);
+        SDL_RenderClear(renderer2);
+        // Dibujar lo que necesites en la segunda ventana
+        SDL_RenderPresent(renderer2);
+Dentro del bucle principal, se limpia cada renderizador con un color blanco (RGB: 255, 255, 255) y se presenta el contenido de cada ventana.
+
+Liberación de recursos y cierre de SDL:
+c
+
+    SDL_DestroyRenderer(renderer1);
+    SDL_DestroyRenderer(renderer2);
+    SDL_DestroyWindow(window1);
+    SDL_DestroyWindow(window2);
+    SDL_Quit();
+Al final del programa, se liberan los renderizadores y las ventanas creadas, y luego se cierra SDL.
+
+#### micro sesion 4
+Claro, aquí está una explicación detallada de cómo se logra la funcionalidad de mostrar una ventana de inicio antes de comenzar el juego:
+
+Inicialización de SDL y ventana: La función initialize_window() se encarga de inicializar SDL, crear la ventana y el renderer. También carga la fuente que se usará para mostrar texto en la ventana.
+
+Pantalla de inicio: La función show_start_screen() se utiliza para mostrar la pantalla de inicio antes de que comience el juego. En esta función, primero se establece el color de fondo y se limpia el renderer. Luego, se crea un texto que indica al jugador que presione la tecla 'R' para comenzar el juego. El texto se renderiza en la ventana y se muestra al usuario.
 
 ### SESION 3 20 marzo
 
