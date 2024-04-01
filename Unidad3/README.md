@@ -33,10 +33,11 @@
 
 1. ¿Qué voy a trabajar hoy?
 
+Hoy trabajaré en mejorar la funcionalidad de "replay" en el juego de pelota y raquetas que estoy desarrollando.
    
 2. ¿Cuál es mi objetivo principal para esta sesión?
 
-
+Mi objetivo principal para esta sesión es optimizar el sistema de "replay" para que sea más eficiente y robusto, además de añadir características adicionales, como la capacidad de guardar y cargar grabaciones de juego.
 
 **Trabajo en concentración**
 
