@@ -32,16 +32,31 @@
 **Planeación:**
 
 1. ¿Qué voy a trabajar hoy?
+
+   
 2. ¿Cuál es mi objetivo principal para esta sesión?
+
+
 
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
 
 3. ¿Qué he logrado en esta micro-sesión de trabajo?
-4. ¿Con qué dificultades me encontré y cómo las abordé?
-5. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-6. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+En esta micro-sesión de trabajo, he logrado implementar un sistema básico de "replay" en el código proporcionado para un juego de pelota y raquetas. Esta característica te permite grabar y luego reproducir las acciones del jugador una vez que el juego ha terminado.
+
+5. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante la implementación del sistema de "replay", me encontré con algunas dificultades, como la necesidad de agregar una estructura adicional para almacenar los datos de reproducción y garantizar que la reproducción se realice correctamente. Para abordar estas dificultades, añadí una nueva estructura de datos para almacenar los fotogramas del juego y creé una función para reproducir estos fotogramas después de que el juego haya terminado.
+   
+7. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+Sí, estoy más cerca de alcanzar el objetivo de la sesión, que era implementar un sistema de "replay" en el juego. Sin embargo, aún hay algunas áreas que podrían mejorarse, como la optimización del código y la gestión de errores. También podría considerar añadir más funcionalidades al sistema de "replay", como la capacidad de guardar y cargar grabaciones.
+   
+9. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, como la gestión de datos en un juego, la implementación de una característica de "replay", el uso de SDL para renderizar gráficos en juegos, y la solución de problemas relacionados con la programación de juegos. Además, he practicado la lectura y comprensión de código existente, así como la modificación y ampliación de dicho código para añadir nuevas funcionalidades.
 
 #### Micro-sesión 2 (25 minutos)
 
