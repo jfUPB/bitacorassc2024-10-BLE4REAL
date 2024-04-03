@@ -251,9 +251,21 @@ En esta micro-sesión, hemos reforzado nuestro entendimiento sobre el encapsulam
 **Cierre de sesión:**
 
 5. ¿He alcanzado los objetivos planteados al inicio? Si no, ¿por qué y qué puedo mejorar?
-6. ¿Cuáles fueron los desafíos más significativos de hoy y cómo los superé?
-7. Basado en el trabajo de hoy, ¿qué insights importantes he ganado?
-8. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+Sí, en general se ha alcanzado el objetivo principal de la sesión, que era comprender y practicar el concepto de encapsulamiento y las relaciones entre objetos en programación orientada a objetos (POO). Se revisaron y comprendieron los conceptos fundamentales, se implementaron métodos en clases existentes, se identificó el constructor de una clase y se profundizó en el concepto de encapsulamiento. Sin embargo, para mejorar, se podría considerar dedicar más tiempo a la práctica y exploración de ejemplos adicionales para reforzar los conceptos aprendidos.
+   
+7. ¿Cuáles fueron los desafíos más significativos de hoy y cómo los superé?
+
+Los desafíos más significativos pueden haber sido limitados, ya que los conceptos presentados fueron claros y fáciles de entender en su mayoría. En caso de encontrar dificultades, se habría abordado tomándose el tiempo necesario para revisar el material y buscar ejemplos adicionales para reforzar la comprensión.
+
+8. Basado en el trabajo de hoy, ¿qué insights importantes he ganado?
+
+Se ha ganado una comprensión más profunda sobre el diseño y la planificación de programas orientados a objetos, así como sobre la importancia de especificar las operaciones disponibles para los objetos y cómo estos métodos pueden manipular el estado de los objetos para realizar tareas específicas. Además, se ha reforzado el entendimiento sobre el encapsulamiento y la importancia de organizar y relacionar los datos y las operaciones en un sistema orientado a objetos de manera clara y modular.
+
+9. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+Los siguientes pasos podrían incluir la exploración de conceptos adicionales de POO, como la herencia, el polimorfismo y la abstracción, así como la aplicación de estos conceptos en ejercicios prácticos adicionales. También se podría considerar la implementación de proyectos más complejos que requieran una comprensión más profunda de la POO y su aplicación en diferentes contextos.
+
 
 ### Sesión 3
 
@@ -296,9 +308,20 @@ En esta micro-sesión, has reforzado tu comprensión sobre el concepto de encaps
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+Un objeto de la clase Shape ocuparía en memoria el espacio suficiente para almacenar sus atributos x e y, que son de tipo int16_t (16 bits cada uno). Además, dependiendo del sistema y la implementación del compilador, puede haber un espacio adicional para alineación u otros propósitos internos.
+
 2. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Un objeto de la clase Rectangle ocuparía en memoria el espacio suficiente para almacenar los atributos heredados de la clase Shape (es decir, x e y), junto con los atributos específicos de la clase Rectangle, que son width y height, ambos de tipo uint16_t (16 bits cada uno). En este caso, el objeto Rectangle también podría tener un espacio adicional para alineación u otros propósitos internos.
+
 3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+En términos de cómo se ven en memoria, un objeto Rectangle contiene todos los atributos de un objeto Shape (ya que Rectangle hereda de Shape), además de sus propios atributos específicos. Por lo tanto, en memoria, un objeto Rectangle tendría una "parte" correspondiente a los atributos de Shape, seguida por los atributos específicos de Rectangle.
+
 4. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+En esta micro-sesión, hemos reforzado nuestra comprensión sobre el concepto de herencia en programación orientada a objetos, así como sobre cómo se estructuran los objetos en memoria y cómo se relacionan entre sí en el contexto de la herencia. Además, hemos practicado el uso de castings de tipos para manipular objetos de subclases como si fueran objetos de la clase base.
 
 #### Micro-sesión 3 (25 minutos)
 
@@ -307,9 +330,21 @@ En esta micro-sesión, has reforzado tu comprensión sobre el concepto de encaps
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+En esta micro-sesión de trabajo, has logrado comparar y contrastar la implementación de la herencia en C y C#. Has construido una versión en C# del ejemplo dado en C, lo que te ha permitido entender cómo se aplican los mismos conceptos en diferentes lenguajes de programación. Esto te ha ayudado a fortalecer tu comprensión sobre herencia y su aplicación en la práctica.
+
 2. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante esta micro-sesión, no hubo dificultades significativas, ya que la tarea era principalmente replicar un ejemplo dado en un lenguaje diferente. Sin embargo, si hubieras enfrentado alguna dificultad, habría sido útil recurrir a la documentación oficial de C# o buscar ejemplos adicionales en línea para obtener más claridad.
+
 3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-4. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+Sí, estás más cerca de alcanzar el objetivo de la sesión, que es comprender en profundidad los conceptos de herencia en programación orientada a objetos. Para consolidar aún más este conocimiento, podrías realizar más ejercicios prácticos que involucren la creación y manipulación de clases y objetos con herencia en diferentes lenguajes de programación. También podrías explorar otros aspectos relacionados con la herencia, como la sobreescritura de métodos y el polimorfismo.
+
+4. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, has reforzado tu comprensión sobre el concepto de herencia en programación orientada a objetos, así como sobre cómo se implementa en los lenguajes de programación C y C#. Has aprendido cómo crear y utilizar clases derivadas que heredan de otras clases base, y has practicado la implementación de herencia en diferentes contextos de programación. Esto te ha proporcionado una comprensión más sólida de cómo se estructuran y relacionan las clases en programas orientados a objetos.
+
 
 #### Micro-sesión 4. (25 minutos)
 
@@ -318,16 +353,41 @@ En esta micro-sesión, has reforzado tu comprensión sobre el concepto de encaps
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/1de590a5-3c86-4d6a-98ab-6c44fd4fe618)En esta micro-sesión de trabajo, has logrado construir un diagrama de clases UML para el ejemplo de herencia que has estado trabajando. Esto te ha permitido visualizar de manera clara y concisa la relación entre las clases Shape y Rectangle, y cómo la clase Rectangle hereda atributos de la clase Shape.
+
 2. ¿Con qué dificultades me encontré y cómo las abordé?
-3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-4. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+Durante esta micro-sesión, no hubo dificultades significativas ya que la tarea era construir un diagrama de clases UML basado en un ejemplo de herencia previamente proporcionado. Sin embargo, si hubieras tenido dificultades, habría sido útil revisar los conceptos básicos de la notación UML y buscar ejemplos adicionales para obtener claridad.
+  
+4. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+Sí, definitivamente estás más cerca de alcanzar el objetivo de la sesión, que es comprender en profundidad los conceptos de herencia y ser capaz de aplicarlos en la práctica. Sin embargo, aún queda trabajo por hacer para consolidar completamente este conocimiento. Podrías seguir practicando con más ejercicios relacionados con la herencia y explorar otros aspectos de la programación orientada a objetos.
+  
+6. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+
+En esta micro-sesión, has aprendido cómo construir un diagrama de clases UML para representar la estructura de clases y la relación de herencia entre ellas. Esto te ha ayudado a reforzar tu comprensión sobre cómo se organizan y relacionan las clases en la programación orientada a objetos, así como a visualizar de manera clara la herencia entre clases.
+
+
 
 **Cierre de sesión:**
 
 5. ¿He alcanzado los objetivos planteados al inicio? Si no, ¿por qué y qué puedo mejorar?
+
+Sí, has alcanzado los objetivos planteados para esta sesión. Has trabajado en profundidad en el concepto de herencia y encapsulamiento, has comparado su implementación en diferentes lenguajes de programación, has construido diagramas de clases UML y has fortalecido tu comprensión práctica de estos conceptos.
+
 6. ¿Cuáles fueron los desafíos más significativos de hoy y cómo los superé?
+
+Durante la sesión, no hubo desafíos significativos, ya que has podido abordar cada ejercicio y tarea con éxito. Sin embargo, es importante seguir enfrentando desafíos para seguir aprendiendo y creciendo en tu habilidad de programación.
+
 7. Basado en el trabajo de hoy, ¿qué insights importantes he ganado?
+
+Has ganado insights importantes sobre cómo se aplican los conceptos fundamentales de la programación orientada a objetos, como la herencia y el encapsulamiento, en diferentes contextos de programación. Además, has practicado la comparación entre diferentes lenguajes de programación, lo que te ha permitido entender cómo se implementan estos conceptos de manera variada.
+
 8. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+   Los siguientes pasos podrían incluir continuar explorando otros aspectos de la programación orientada a objetos, como la sobreescritura de métodos, el polimorfismo y la composición. Además, podrías buscar más ejercicios prácticos y proyectos para seguir aplicando y fortaleciendo tus habilidades en estos conceptos.
 
 
 ## Semana 11
