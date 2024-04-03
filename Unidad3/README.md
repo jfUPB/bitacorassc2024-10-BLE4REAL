@@ -111,16 +111,40 @@ En esta micro-sesión, hemos reforzado nuestra comprensión sobre las clases y o
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+En esta micro-sesión de trabajo, he repasado y consolidado mis conocimientos sobre el concepto de encapsulamiento en programación orientada a objetos. He aplicado este concepto en la práctica a través de ejemplos concretos y he sido capaz de comparar su implementación en diferentes lenguajes de programación.
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/bd90400c-4d0b-4b2c-991b-2633a8c52173)
+
 2. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante esta micro-sesión, no hubo dificultades significativas, ya que el objetivo era principalmente repasar y consolidar conceptos previamente aprendidos. En caso de encontrar dificultades, habría sido útil revisar ejemplos adicionales o consultar la documentación específica para una comprensión más profunda.
+
 3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+Sí, estoy más cerca de alcanzar el objetivo de la sesión, que es comprender el encapsulamiento en profundidad y ser capaz de aplicarlo en la práctica de manera efectiva. Para consolidar aún más este conocimiento, podría realizar ejercicios adicionales que involucren la creación de clases y objetos con encapsulamiento en diferentes lenguajes de programación, así como explorar otros conceptos relacionados con la programación orientada a objetos.
+
 4. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, he reforzado mi comprensión sobre el concepto de encapsulamiento en programación orientada a objetos y he sido capaz de aplicarlo en ejemplos prácticos en diferentes lenguajes de programación. También he fortalecido mi habilidad para comparar y contrastar implementaciones en distintos contextos, lo que me permite tener una comprensión más completa y versátil del concepto.
 
 **Cierre de sesión:**
 
-5. ¿He alcanzado los objetivos planteados al inicio? Si no, ¿por qué y qué puedo mejorar?
+5. ¿He alcanzado los objetivos planteados al inicio? Si no, ¿por qué y qué puedo mejorar?}
+
+En esta micro-sesión, se ha avanzado significativamente hacia el objetivo de comprender los conceptos fundamentales de programación orientada a objetos (POO), específicamente las clases y los objetos. Sin embargo, aún queda por explorar otros conceptos relacionados con POO, como la herencia, el polimorfismo y el encapsulamiento, para tener una comprensión más completa del paradigma de programación.
+
 6. ¿Cuáles fueron los desafíos más significativos de hoy y cómo los superé?
+
+Los desafíos más significativos de hoy incluyeron la necesidad de asimilar y comprender los conceptos de clases y objetos en un corto período de tiempo. Estos desafíos se superaron mediante la atención y concentración durante la explicación de los conceptos, así como la disposición para hacer preguntas y aclarar dudas.
+
 7. Basado en el trabajo de hoy, ¿qué insights importantes he ganado?
+
+A partir del trabajo de hoy, se ha ganado una comprensión más sólida de cómo las clases actúan como plantillas para crear objetos en programación orientada a objetos. Este insight es fundamental para construir una base sólida sobre la cual se pueden explorar y comprender conceptos más avanzados de POO.
+
 8. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+Los siguientes pasos para continuar avanzando en el proyecto podrían incluir la exploración de conceptos adicionales de POO, como la herencia, el polimorfismo y el encapsulamiento, a través de ejemplos prácticos y ejercicios de codificación. Además, podría ser beneficioso aplicar estos conceptos en proyectos o problemas prácticos para reforzar la comprensión y habilidades prácticas en programación orientada a objetos.
 
 ### Sesión 2
 
@@ -313,14 +337,13 @@ En esta micro-sesión, has reforzado tu comprensión sobre el concepto de encaps
 #### Micro-sesión 1 (25 minutos)
 
 **Planeación:**
-![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/bd90400c-4d0b-4b2c-991b-2633a8c52173)
+
 1. ¿Qué voy a trabajar hoy?
    
-Hoy trabajarás en consolidar tus conocimientos sobre programación orientada a objetos, específicamente en el concepto de encapsulamiento y su aplicación en diferentes lenguajes de programación.
 
 3. ¿Cuál es mi objetivo principal para esta sesión?
 
-El objetivo principal para esta sesión es comprender en profundidad el concepto de encapsulamiento y ser capaz de aplicarlo correctamente en la creación de clases y objetos en distintos contextos de programación.
+
 
 **Trabajo en concentración**
 
@@ -328,11 +351,11 @@ El objetivo principal para esta sesión es comprender en profundidad el concepto
 
 3. ¿Qué he logrado en esta micro-sesión de trabajo?
 
-En esta micro-sesión de trabajo, he repasado y consolidado mis conocimientos sobre el concepto de encapsulamiento en programación orientada a objetos. He aplicado este concepto en la práctica a través de ejemplos concretos y he sido capaz de comparar su implementación en diferentes lenguajes de programación.
+
 
 4. ¿Con qué dificultades me encontré y cómo las abordé?
 
-Durante esta micro-sesión, no hubo dificultades significativas, ya que el objetivo era principalmente repasar y consolidar conceptos previamente aprendidos. En caso de encontrar dificultades, habría sido útil revisar ejemplos adicionales o consultar la documentación específica para una comprensión más profunda.
+
 
 5. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
 6. ¿Qué he aprendido o reforzado en esta micro-sesión? 
