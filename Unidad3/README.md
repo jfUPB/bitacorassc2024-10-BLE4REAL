@@ -66,9 +66,21 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
-2. ¿Con qué dificultades me encontré y cómo las abordé?
-3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-4. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+   
+En esta micro-sesión, he revisado un ejemplo de encapsulamiento en C, donde se define una estructura Shape que encapsula datos (x e y) y funciones que operan sobre esos datos. He comprendido cómo se pueden agrupar datos y funciones relacionadas en una estructura en C para lograr encapsulamiento.
+   
+5. ¿Con qué dificultades me encontré y cómo las abordé?
+
+No hubo dificultades significativas en esta micro-sesión, ya que el concepto de encapsulamiento en C es bastante claro. Sin embargo, revisar y entender el código proporcionado puede requerir un conocimiento previo de programación en C. Abordé esto leyendo cuidadosamente el código y relacionándolo con la explicación proporcionada.
+
+6. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+Esta micro-sesión contribuyó a comprender cómo se implementa el encapsulamiento en C, lo cual es relevante para el objetivo general de la sesión, que es investigar y experimentar con los conceptos de programación orientada a objetos y estructuras de datos. Como acción pendiente, podría profundizar más en otros ejemplos de encapsulamiento y explorar cómo se aplican en diferentes contextos.
+
+7. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, he reforzado mi comprensión sobre cómo implementar encapsulamiento en C mediante el uso de estructuras y funciones relacionadas. También he repasado la importancia de agrupar datos y funciones relacionadas para mejorar la modularidad y la claridad del código.
+
 
 #### Micro-sesión 3 (25 minutos)
 
@@ -77,9 +89,20 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
-2. ¿Con qué dificultades me encontré y cómo las abordé?
-3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-4. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+En esta micro-sesión de trabajo, hemos revisado y comprendido los conceptos fundamentales de clases y objetos en programación orientada a objetos (POO). Hemos definido una clase como una plantilla para la creación de objetos y entendido que los objetos son instancias específicas de estas clases.
+  
+3. ¿Con qué dificultades me encontré y cómo las abordé?
+
+No hubo dificultades significativas durante esta micro-sesión, ya que los conceptos de clases y objetos son conceptos básicos en programación orientada a objetos y se explicaron de manera clara y concisa.
+   
+5. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+Esta micro-sesión ha contribuido al objetivo general de la sesión, que es investigar y experimentar con los conceptos de programación orientada a objetos y estructuras de datos. A partir de aquí, se podría continuar explorando otros conceptos relacionados con POO, como herencia, polimorfismo y encapsulamiento, para tener una comprensión más completa de este paradigma de programación.
+
+6. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, hemos reforzado nuestra comprensión sobre las clases y objetos en programación orientada a objetos. Hemos aprendido que las clases actúan como plantillas para crear objetos y que los objetos son instancias específicas de estas clases, cada uno con su propio conjunto de atributos y métodos. Esto sienta una base sólida para comprender otros conceptos de POO y estructuras de datos que pueden construirse sobre estos fundamentos.
 
 #### Micro-sesión 4. (25 minutos)
 
@@ -106,16 +129,32 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 **Planeación:**
 
 1. ¿Qué voy a trabajar hoy?
+
+Hoy voy a trabajar en comprender y practicar el concepto de encapsulamiento y relaciones entre objetos en programación orientada a objetos (POO).
+
 2. ¿Cuál es mi objetivo principal para esta sesión?
+
+El objetivo principal para esta sesión es entender cómo se puede encapsular la funcionalidad y los datos dentro de clases en programación orientada a objetos, así como también comprender cómo los objetos pueden relacionarse entre sí para lograr un comportamiento más complejo.
 
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
 
 3. ¿Qué he logrado en esta micro-sesión de trabajo?
-4. ¿Con qué dificultades me encontré y cómo las abordé?
-5. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-6. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+En esta micro-sesión, he revisado y comprendido los conceptos fundamentales de clases y objetos en programación orientada a objetos. He analizado un ejemplo que ilustra el concepto de encapsulamiento en C y he reflexionado sobre cómo se pueden establecer relaciones entre objetos para crear sistemas más complejos.
+   
+5. ¿Con qué dificultades me encontré y cómo las abordé?
+
+No hubo dificultades significativas durante esta micro-sesión. Los conceptos presentados fueron claros y fáciles de entender. Si hubiera habido dificultades, habría tomado el tiempo necesario para revisar el material y buscar ejemplos adicionales para reforzar mi comprensión.
+
+6. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+Sí, estoy más cerca de alcanzar el objetivo de la sesión, que es comprender y practicar el encapsulamiento y las relaciones entre objetos en POO. Para completar el objetivo, todavía necesito practicar más y aplicar estos conceptos en ejercicios adicionales.
+
+7. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, he reforzado mi comprensión sobre cómo se pueden encapsular datos y funciones en clases en programación orientada a objetos. También he aprendido sobre la importancia de establecer relaciones entre objetos para crear sistemas más complejos y modularizados.
 
 #### Micro-sesión 2 (25 minutos)
 
@@ -124,9 +163,21 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+En esta micro-sesión, hemos implementado un nuevo método en la clase Shape llamado Shape_moveTo, que nos permite mover un objeto Shape a una posición específica definida por coordenadas x e y. Esto nos ayuda a ampliar la funcionalidad de nuestros objetos y nos acerca a comprender mejor cómo diseñar y planificar programas orientados a objetos.
+
 2. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante esta micro-sesión, no encontré dificultades significativas. La implementación del nuevo método fue relativamente sencilla, ya que construimos sobre el conocimiento y la estructura existentes del programa. En caso de encontrar dificultades, habría sido útil consultar la documentación relevante o buscar ejemplos adicionales para obtener una comprensión más profunda.
+
 3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-4. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+Sí, estamos más cerca de alcanzar el objetivo de la sesión, que es comprender y practicar el encapsulamiento y las relaciones entre objetos en la programación orientada a objetos. Sin embargo, aún hay más por hacer para consolidar estos conceptos, como explorar otros ejemplos y prácticas adicionales que involucren clases, objetos y sus relaciones.
+   
+5. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, hemos reforzado nuestra comprensión sobre cómo diseñar y planificar programas orientados a objetos. Hemos aprendido la importancia de especificar las operaciones que estarán disponibles para los objetos y cómo estos métodos pueden manipular el estado de los objetos para realizar tareas específicas. Además, hemos consolidado nuestro conocimiento sobre cómo implementar nuevas funcionalidades en una clase existente para extender su utilidad.
+
 
 #### Micro-sesión 3 (25 minutos)
 
@@ -135,9 +186,20 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+En esta micro-sesión de trabajo, hemos identificado y comprendido el constructor de una clase en el contexto de la programación orientada a objetos. Además, hemos aplicado este conocimiento al ejemplo proporcionado, reconociendo el constructor Shape_ctor como la función responsable de inicializar objetos de la clase Shape.
+
 2. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante esta micro-sesión, no encontré dificultades significativas, ya que el concepto de constructor es fundamental en la programación orientada a objetos y su función en el código proporcionado era clara. En caso de enfrentar alguna dificultad, habría sido útil revisar la documentación relacionada con los constructores en C o buscar ejemplos adicionales para una comprensión más profunda.
+
 3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-4. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+Sí, estamos más cerca de alcanzar el objetivo de la sesión, que es comprender y practicar los conceptos fundamentales de la programación orientada a objetos, como el encapsulamiento, la herencia y la creación de objetos mediante constructores. Para consolidar aún más estos conceptos, podríamos explorar ejemplos adicionales y realizar ejercicios prácticos que involucren la implementación y el uso de clases y objetos en diferentes contextos.
+
+4. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+   En esta micro-sesión, hemos reforzado nuestra comprensión sobre el constructor de una clase en programación orientada a objetos. Hemos aprendido que el constructor es un método especial que se utiliza para inicializar objetos de una clase y prepararlos para su uso. Además, hemos reconocido la importancia del constructor en el diseño de programas orientados a objetos, ya que garantiza que los objetos se creen en un estado válido y coherente.
 
 #### Micro-sesión 4. (25 minutos)
 
@@ -146,9 +208,21 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 **Meta-aprendizaje:**
 
 1. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+En esta micro-sesión de trabajo, hemos profundizado en el concepto de encapsulamiento en programación orientada a objetos. Hemos identificado tanto el estado como el comportamiento de un objeto en el contexto de un ejemplo con la clase Shape. Esto nos ha permitido comprender cómo se encapsulan los datos y el comportamiento dentro de una clase, lo que mejora la modularidad y la claridad del código.
+
 2. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante esta micro-sesión, no hubo dificultades significativas, ya que los conceptos discutidos eran claros y bien definidos. Sin embargo, si surgieran dudas o confusiones, habría sido útil revisar ejemplos adicionales o consultar recursos de referencia para una comprensión más profunda.
+
 3. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
+
+Sí, estamos más cerca de alcanzar el objetivo de la sesión, que es comprender y practicar los conceptos fundamentales de la programación orientada a objetos, como el encapsulamiento. Para consolidar aún más nuestro entendimiento, podríamos seguir explorando otros aspectos de la POO, como la herencia, el polimorfismo y la abstracción, y aplicar estos conceptos en ejercicios prácticos adicionales.
+
 4. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, hemos reforzado nuestro entendimiento sobre el encapsulamiento en programación orientada a objetos. Hemos aprendido que el encapsulamiento implica la ocultación de los detalles de implementación de un objeto y la exposición controlada de su interfaz pública. Además, hemos identificado tanto el estado como el comportamiento de un objeto en el contexto de una clase, lo que nos ayuda a comprender cómo se organizan y relacionan los datos y las operaciones en un sistema orientado a objetos.
+
 
 **Cierre de sesión:**
 
@@ -164,16 +238,32 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 **Planeación:**
 
 1. ¿Qué voy a trabajar hoy?
+
+En esta micro-sesión de trabajo, has realizado una comparación entre la implementación del encapsulamiento en C y en C#, lo que te ha permitido comprender cómo se aplican los mismos conceptos en diferentes lenguajes de programación.
+
 2. ¿Cuál es mi objetivo principal para esta sesión?
+
+El objetivo principal para esta sesión es comprender en profundidad el concepto de encapsulamiento y ser capaz de aplicarlo correctamente en la creación de clases y objetos en distintos contextos de programación.
 
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
 
 3. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+En esta micro-sesión de trabajo, has realizado una comparación entre la implementación del encapsulamiento en C y en C#, lo que te ha permitido comprender cómo se aplican los mismos conceptos en diferentes lenguajes de programación.
+
 4. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante esta micro-sesión, no hubo dificultades significativas, ya que el objetivo era principalmente comparar las implementaciones en diferentes lenguajes. En caso de encontrar dificultades, habría sido útil consultar la documentación específica de cada lenguaje o buscar ejemplos adicionales para una comprensión más profunda.
+
 5. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
-6. ¿Qué he aprendido o reforzado en esta micro-sesión? 
+
+Sí, estás más cerca de alcanzar el objetivo de la sesión, que es comprender el encapsulamiento en profundidad y ser capaz de aplicarlo en la práctica. Para consolidar aún más este conocimiento, podrías realizar ejercicios adicionales que involucren la creación de clases y objetos con encapsulamiento en diferentes lenguajes de programación.
+
+6. ¿Qué he aprendido o reforzado en esta micro-sesión?
+
+En esta micro-sesión, has reforzado tu comprensión sobre el concepto de encapsulamiento y has aprendido cómo aplicarlo en la práctica utilizando ejemplos en C y C#. Además, has fortalecido tu capacidad para comparar y contrastar implementaciones en diferentes lenguajes de programación.
 
 #### Micro-sesión 2 (25 minutos)
 
@@ -223,16 +313,27 @@ En esta micro-sesión, he aprendido o reforzado varios conceptos y habilidades, 
 #### Micro-sesión 1 (25 minutos)
 
 **Planeación:**
-
+![image](https://github.com/jfUPB/bitacorassc2024-10-BLE4REAL/assets/110466693/bd90400c-4d0b-4b2c-991b-2633a8c52173)
 1. ¿Qué voy a trabajar hoy?
-2. ¿Cuál es mi objetivo principal para esta sesión?
+   
+Hoy trabajarás en consolidar tus conocimientos sobre programación orientada a objetos, específicamente en el concepto de encapsulamiento y su aplicación en diferentes lenguajes de programación.
+
+3. ¿Cuál es mi objetivo principal para esta sesión?
+
+El objetivo principal para esta sesión es comprender en profundidad el concepto de encapsulamiento y ser capaz de aplicarlo correctamente en la creación de clases y objetos en distintos contextos de programación.
 
 **Trabajo en concentración**
 
 **Meta-aprendizaje:**
 
 3. ¿Qué he logrado en esta micro-sesión de trabajo?
+
+En esta micro-sesión de trabajo, he repasado y consolidado mis conocimientos sobre el concepto de encapsulamiento en programación orientada a objetos. He aplicado este concepto en la práctica a través de ejemplos concretos y he sido capaz de comparar su implementación en diferentes lenguajes de programación.
+
 4. ¿Con qué dificultades me encontré y cómo las abordé?
+
+Durante esta micro-sesión, no hubo dificultades significativas, ya que el objetivo era principalmente repasar y consolidar conceptos previamente aprendidos. En caso de encontrar dificultades, habría sido útil revisar ejemplos adicionales o consultar la documentación específica para una comprensión más profunda.
+
 5. ¿Estoy más cerca de alcanzar el objetivo de la sesión? ¿Qué falta por hacer?
 6. ¿Qué he aprendido o reforzado en esta micro-sesión? 
 
