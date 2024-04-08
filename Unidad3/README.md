@@ -396,19 +396,22 @@ Has ganado insights importantes sobre cómo se aplican los conceptos fundamental
 
 1. ¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
+El propósito de la sesión de hoy es entender y aplicar el concepto de polimorfismo en C utilizando el ejemplo proporcionado. También se me pide modificar la aplicación para agregar un nuevo tipo de forma (Shape).
  
 2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-> Escribe aquí
+Los desafíos más significativos incluyeron comprender cómo funciona el polimorfismo en C, entender la estructura de las clases y cómo se relacionan entre sí, y luego modificar el código para agregar un nuevo tipo de forma (Shape) mientras se mantiene el comportamiento polimórfico. Superé estos desafíos dedicando tiempo a comprender el código proporcionado, familiarizándome con la sintaxis de C y la manipulación de punteros, y aplicando el concepto de polimorfismo de manera cuidadosa.
 
 3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-> Escribe aquí
+asado en el trabajo de la sesión, aprendí cómo implementar el polimorfismo en C utilizando punteros a funciones y estructuras. Concluyo que el polimorfismo es una herramienta poderosa que permite escribir código más flexible y reutilizable al permitir que objetos de diferentes clases se comporten de manera similar a través de una interfaz común.
 
 4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
 
-> Escribe aquí
+Probar la aplicación modificada para asegurarme de que el nuevo tipo de forma (Shape) se agregó correctamente y que el comportamiento polimórfico se mantiene.
+Explorar otras formas de formas (por ejemplo, triángulos, elipses, etc.) y agregarlas al sistema si es necesario.
+Refactorizar el código para mejorar su legibilidad y mantenibilidad.
+Explorar casos de uso más complejos y ver cómo el polimorfismo facilita la implementación de estos casos.
 
 ### Sesión 2
 
