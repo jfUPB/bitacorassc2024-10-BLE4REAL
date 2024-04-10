@@ -417,37 +417,45 @@ Explorar casos de uso más complejos y ver cómo el polimorfismo facilita la imp
 
 1. ¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
- 
+En la sesion de hoy se valoro el metodo que se uso en la unidad 2 sobre como se inicia la replay dentro del codigo para el juego pong
+
+    if (replay_frame_count < MAX_FRAMES) {
+        replay_frames[replay_frame_count].ball = ball;
+        replay_frames[replay_frame_count].paddle = paddle;
+        replay_frames[replay_frame_count].opposite_paddle = opposite_paddle;
+        replay_frame_count++;
+    }
+se hizo un arreglo el cual contenia el metodo 
+
 2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-> Escribe aquí
+El problema que se encontro en el codigo fue se debe cambiar por una lista enlazada dinamica, asi se guardara el archivo en el codigo y dentro del juego la consola rpeguntara si se desea ver la antigua repeticion
 
 3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-> Escribe aquí
+la conclusion es que esta bien hacer el arreglo aunque este esta limitado a guardar los primeros 16 segundos de gameplay siendo que la lista dinamica puede almacenar la partida completa
 
 4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
 
-> Escribe aquí
+se trabajara en la unidad 3 en el polimorfismo, herencia y todo lo que se abarque en poo
 
 ### Sesión 3
 
 1. ¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
+El propósito de la sesión de hoy podría ser desarrollar y probar la lógica del juego, manejar eventos de entrada del usuario y actualizar la posición y estado de los objetos del juego. Esto incluiría la pelota y las raquetas en tu juego de pong
  
 2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-> Escribe aquí
+ Los desafíos podrían incluir la correcta sincronización y renderizado de los objetos del juego, así como la implementación de la lógica de colisión. Para superar estos desafíos, podrías utilizar bucles de tiempo controlados para manejar la actualización de los estados y la renderización, y algoritmos de detección de colisiones para la interacción entre objetos.
 
 3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-> Escribe aquí
+Basado en el trabajo de la sesión, podrías aprender más sobre la gestión de recursos en SDL, como la creación y destrucción de ventanas y renderizadores, y la importancia de una arquitectura de juego bien diseñada para facilitar la expansión y el mantenimiento del código.
 
 4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
 
-> Escribe aquí
+Los pasos siguientes podrían incluir la implementación de la lógica de puntuación, la mejora de la inteligencia artificial para la raqueta opuesta, y la adición de efectos de sonido y música. También podrías considerar la optimización del rendimiento y la realización de pruebas de usuario para obtener retroalimentación.
 
 
 ## Semana 12
