@@ -462,21 +462,24 @@ Los pasos siguientes podrían incluir la implementación de la lógica de puntua
 
 ### Sesión 1
 
-1. ¿Cuál será el propósito de la sesión de hoy?
+¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
- 
-2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+El propósito de la sesión de hoy es revisar y discutir el progreso del proyecto, abordar cualquier problema o desafío que hayamos encontrado y planificar los próximos pasos a seguir.
 
-> Escribe aquí
+¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
+Uno de los desafíos más significativos fue la gestión de la colisión entre la pelota y las raquetas en el juego. Para superarlo, revisé detenidamente la lógica de colisión existente, realicé pruebas exhaustivas y ajusté los cálculos de velocidad y posición para garantizar un comportamiento adecuado.
 
-> Escribe aquí
+Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+Aprendí la importancia de la planificación y la resolución de problemas en el desarrollo de proyectos. También reforcé mis habilidades de depuración y ajuste fino de algoritmos para lograr el comportamiento deseado en el juego. En resumen, la sesión me ayudó a mejorar mis habilidades técnicas y mi capacidad para abordar desafíos complejos en el desarrollo de software.
 
-> Escribe aquí
+¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+Los próximos pasos incluyen la implementación de características adicionales, como puntajes, niveles o mejoras en la interfaz de usuario. También es importante realizar pruebas exhaustivas para garantizar que el juego funcione correctamente en diferentes escenarios y resolver cualquier problema que surja durante el proceso. Además, considerar la optimización del código y la refactorización para mejorar la legibilidad y el rendimiento del juego.
+
+
+
 
 ### Sesión 2
 
