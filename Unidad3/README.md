@@ -483,39 +483,47 @@ Los próximos pasos incluyen la implementación de características adicionales,
 
 ### Sesión 2
 
-1. ¿Cuál será el propósito de la sesión de hoy?
+¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
- 
-2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+El propósito de la sesión de hoy es avanzar en el desarrollo del juego de Pong, centrándose en la implementación de la lógica del juego, la detección de colisiones y la interacción del usuario.
 
-> Escribe aquí
+¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
+Los desafíos más significativos de la sesión fueron la implementación de la detección de colisiones entre la pelota y las paletas, así como la actualización adecuada de la posición de los objetos del juego. Para superar estos desafíos, revisé cuidadosamente el código proporcionado, utilicé funciones auxiliares para simplificar la lógica y realicé pruebas exhaustivas para asegurarme de que el comportamiento del juego fuera el esperado.
 
-> Escribe aquí
+Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+En esta sesión, aprendí sobre la importancia de la estructuración del código y la planificación cuidadosa de la implementación de la lógica del juego. También reforcé mis habilidades en el uso de SDL para crear aplicaciones gráficas y en la gestión de la entrada del usuario.
 
-> Escribe aquí
+¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+Los pasos siguientes para continuar avanzando en el proyecto incluyen la implementación de características adicionales, como el marcador, la música de fondo y la optimización del rendimiento del juego. Además, es importante realizar pruebas exhaustivas para identificar y corregir posibles errores o fallos en el funcionamiento del juego.
+
+
 
 ### Sesión 3
 
-1. ¿Cuál será el propósito de la sesión de hoy?
+¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
- 
-2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+El propósito de la sesión de hoy es continuar desarrollando el juego de Pong utilizando programación orientada a objetos en C, integrando nuevas funcionalidades y mejorando la interactividad del juego.
 
-> Escribe aquí
+¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
+Uno de los desafíos fue implementar el control de las paletas del juego y detectar las colisiones con la pelota de manera adecuada. Para superarlo, revisé detalladamente la lógica de detección de colisiones y el manejo de eventos de teclado utilizando la biblioteca SDL, asegurándome de entender cada paso y depurando cualquier error que encontrara.
+Otra dificultad fue mantener la organización del código a medida que se agregaban nuevas funcionalidades. Para abordar esto, modularicé el código en funciones y estructuras de datos donde fuera posible, manteniendo así una estructura clara y fácil de entender.
 
-> Escribe aquí
+Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+Aprendí cómo utilizar la programación orientada a objetos en C para estructurar y organizar el código de un proyecto de software de manera más eficiente y comprensible.
+Reforcé mis habilidades en el manejo de eventos y la detección de colisiones en juegos utilizando la biblioteca SDL.
+Comprendí la importancia de la modularización del código y la creación de abstracciones para facilitar el mantenimiento y la escalabilidad de un proyecto.
 
-> Escribe aquí
+¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+Implementar nuevas características como puntajes, efectos de sonido y mejoras visuales para hacer el juego más atractivo.
+Optimizar el rendimiento del juego y solucionar cualquier problema de fluidez o rendimiento.
+Realizar pruebas exhaustivas para asegurarse de que todas las funcionalidades funcionen correctamente y corregir cualquier error encontrado.
+Considerar la posibilidad de ampliar el juego con modos de juego adicionales o características avanzadas para agregar más profundidad y variedad.
 
 ## Semana 13
 
