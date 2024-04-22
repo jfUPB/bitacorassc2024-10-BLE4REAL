@@ -529,21 +529,17 @@ Considerar la posibilidad de ampliar el juego con modos de juego adicionales o c
 
 ### Sesión 1
 
-1. ¿Cuál será el propósito de la sesión de hoy?
+¿Cuál será el propósito de la sesión de hoy?
+El propósito de la sesión de hoy será revisar y mejorar el código de un juego simple implementado en C utilizando la biblioteca SDL . También exploraremos el uso de punteros en el código y cómo afectan la estructura y eficiencia del programa.
 
-> Escribe aquí
- 
-2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+Uno de los desafíos significativos fue comprender completamente cómo se manejan los punteros en el código y cómo afectan el flujo del programa. Para superarlo, revisé cada instancia de uso de punteros y me aseguré de entender cómo se estaban utilizando para pasar y manipular datos.
 
-> Escribe aquí
+Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
+Basado en el trabajo de la sesión, aprendí sobre la importancia de los punteros en C para trabajar con estructuras y datos dinámicos, así como su papel en la optimización de la memoria y el rendimiento del programa. También reforcé mi comprensión de cómo se implementan los juegos simples en SDL.
 
-3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
-
-> Escribe aquí
-
-4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
-
-> Escribe aquí
+¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+Los pasos siguientes para continuar avanzando en el proyecto podrían incluir la adición de nuevas características al juego, como sonidos, niveles adicionales o mejoras en la jugabilidad. Además, sería beneficioso realizar una refactorización adicional del código para mejorar su legibilidad y modularidad, así como realizar pruebas exhaustivas para garantizar que el juego funcione correctamente en diferentes escenarios.
 
 ### Sesión 2
 
