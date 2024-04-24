@@ -539,40 +539,37 @@ Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cu
 Basado en el trabajo de la sesión, aprendí sobre la importancia de los punteros en C para trabajar con estructuras y datos dinámicos, así como su papel en la optimización de la memoria y el rendimiento del programa. También reforcé mi comprensión de cómo se implementan los juegos simples en SDL.
 
 ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
-Los pasos siguientes para continuar avanzando en el proyecto podrían incluir la adición de nuevas características al juego, como sonidos, niveles adicionales o mejoras en la jugabilidad. Además, sería beneficioso realizar una refactorización adicional del código para mejorar su legibilidad y modularidad, así como realizar pruebas exhaustivas para garantizar que el juego funcione correctamente en diferentes escenarios.
+
+continuar puliendo el codigo para hacerlo funcional y asi completar el refactoring
 
 ### Sesión 2
+¿Cuál será el propósito de la sesión de hoy?
+El propósito de la sesión de hoy es continuar trabajando en el desarrollo de un juego utilizando el lenguaje de programación C y la biblioteca SDL. En particular, se buscará avanzar en la implementación de la lógica del juego, incluyendo la detección de colisiones, el movimiento de los elementos del juego y la presentación gráfica.
 
-1. ¿Cuál será el propósito de la sesión de hoy?
+¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+Uno de los desafíos más significativos de la sesión fue comprender y aplicar correctamente los conceptos de punteros en C, especialmente en el contexto de la detección de colisiones entre la pelota y las paletas del juego. Para superar este desafío, se revisaron cuidadosamente las estructuras y funciones involucradas, así como se realizaron pruebas exhaustivas para garantizar que la lógica de colisión funcionara correctamente.
 
-> Escribe aquí
- 
-2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
+Basado en el trabajo de la sesión, se aprendió cómo utilizar punteros en C para trabajar con estructuras y datos complejos, así como cómo implementar la detección de colisiones en un juego simple utilizando SDL. Una conclusión importante es que el uso adecuado de punteros es crucial para manipular datos de manera eficiente en C, especialmente en proyectos que involucran lógica de juegos y gráficos.
 
-> Escribe aquí
+¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+Los siguientes pasos para avanzar en el proyecto podrían incluir: completacion incluyendo herencia y encapsulamiento
 
-3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
-
-> Escribe aquí
-
-4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
-
-> Escribe aquí
 
 ### Sesión 3
 
-1. ¿Cuál será el propósito de la sesión de hoy?
+¿Cuál será el propósito de la sesión de hoy?
 
-> Escribe aquí
- 
-2. ¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
+El propósito de la sesión de hoy es comprender y analizar el código proporcionado, el cual implementa un juego básico utilizando SDL en C. Además, se buscará identificar áreas de mejora y posibles extensiones para el proyecto.
 
-> Escribe aquí
+¿Cuáles fueron los desafíos más significativos de la sesión y cómo los superé?
 
-3. Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
+Uno de los desafíos significativos fue entender cómo se gestionan las colisiones entre la pelota y las paletas, así como el funcionamiento general del juego. Para superar este desafío, revisé detenidamente el código y realicé pruebas para comprender mejor el flujo de ejecución y la lógica detrás del juego.
 
-> Escribe aquí
+Basado en el trabajo de la sesión, ¿Qué aprendí o qué conclusión saco o cuál es la síntesis?
 
-4. ¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+Basado en el trabajo de la sesión, aprendí sobre el uso de SDL en C para crear juegos simples. También reforcé mi comprensión sobre la organización de código utilizando estructuras, así como la implementación de la lógica de juego y la presentación gráfica.
 
-> Escribe aquí
+¿Cuáles son los pasos siguientes para continuar avanzando en el proyecto?
+
+aplicar en la medida en lo que se pueda polimorfismo 
