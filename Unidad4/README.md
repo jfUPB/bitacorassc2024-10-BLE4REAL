@@ -43,24 +43,120 @@ usando la siguiente plantilla:
 
 ### Semana 14
 
+
 #### Sesión 1
+
+> 1. ¿Qué tipo de actividad estás evidenciando?
+
+hoy se evidencio un control de versiones utilizando https://ominous-space-umbrella-p4ww9rvxx67c9pjg.github.dev
+
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+
+el proposito es entender el funcionamiento de la pagina, ademas de conocer algunos codigos para el funcionamiento del archivo main.c 
+
+> 4. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+void* imprime_x(void *param){
+    while(1) printf("x");
+    return NULL;
+}
+
+
+int main(int argc, char *argv[]){
+    pthread_t threadID;
+    pthread_create(&threadID,NULL,&imprime_x,NULL);
+    while(1) printf("o");
+    exit(EXIT_SUCCESS);
+}
+
+
+> 6. ¿Cuáles es el resultado de la actividad?
+
+el programa tiene dos hilos: uno principal que imprime la letra 'o' en un bucle infinito en la función main(), y otro hilo secundario que imprime la letra 'x' en un bucle infinito en la función imprime_x().
+
+Este programa utiliza la biblioteca pthread de C para crear dos hilos. Uno de los hilos, el hilo principal, se ejecuta en la función main() y se encarga de imprimir la letra 'o' repetidamente en un bucle infinito. El otro hilo se crea en la función imprime_x() y se encarga de imprimir la letra 'x' repetidamente en otro bucle infinito. Ambos hilos se ejecutan simultáneamente, lo que significa que las letras 'o' y 'x' se imprimirán en la terminal al mismo tiempo
+
+> 8. ¿Qué aprendiste de la actividad?
+
+a hacer un control de versiones, a enviar el codigo con el control de codigo fuente, tambien a crear archivos para la bitacora, algunos codigos como "clear" para limpiar la terminal y algunos funcionamientos extra de este
 
 #### Sesión 2
 
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
+
 #### Sesión 3
+
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
 
 ### Semana 15
 
 #### Sesión 1
 
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
+
 #### Sesión 2
 
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
+
 #### Sesión 3
+
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
 
 ### Semana 16
 
 #### Sesión 1
 
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
+
 #### Sesión 2
 
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
+
 #### Sesión 3
+
+> 1. ¿Qué tipo de actividad estás evidenciando?
+> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
+>    el resultado final de la actividad.
+> 4. ¿Cuáles es el resultado de la actividad?
+> 5. ¿Qué aprendiste de la actividad?
