@@ -150,20 +150,86 @@ De esta actividad, aprendí la importancia de comprender y manejar adecuadamente
 #### Sesión 1
 
 > 1. ¿Qué tipo de actividad estás evidenciando?
+
+La actividad que estoy evidenciando es una explicación informal sobre cómo usar la función pthread_join en un programa de hilos en C.
+
 > 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+
+La actividad consiste en explicar cómo la función pthread_join se utiliza para asegurar que el hilo principal espere a que un hilo en particular termine antes de continuar con su ejecución. El propósito de esta actividad es clarificar cómo resolver el problema de que los hilos no terminen su trabajo antes de que el programa principal finalice. La pregunta que se busca investigar es cómo garantizar que los hilos completen sus tareas antes de que el programa principal termine su ejecución.
+
 > 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
 >    el resultado final de la actividad.
-> 4. ¿Cuáles es el resultado de la actividad?
-> 5. ¿Qué aprendiste de la actividad?
+
+La actividad está respaldada por el siguiente código fuente, con el commit correspondiente que tiene el resultado final de la actividad:Commit: [Implementación de pthread_join](link al commit)
+
+// Código modificado con pthread_join
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+struct threadParam_t
+{
+    char character;
+    int counter;
+};
+
+void* imprime(void *parg){
+    struct threadParam_t *pargTmp = (struct threadParam_t *)parg;
+    for(int i = 0; i < pargTmp->counter;i++){
+        printf("%c",pargTmp->character);
+    }
+    return NULL;
+}
+
+int main(int argc, char *argv[]){
+    pthread_t threadID1;
+    pthread_t threadID2;
+
+    struct threadParam_t threadParam1 = {'a',30000};
+    struct threadParam_t threadParam2 = {'b',20000};
+
+    pthread_create(&threadID1,NULL,&imprime, &threadParam1);
+    pthread_join(threadID1,NULL); // Esperar a que el hilo threadID1 termine
+
+    pthread_create(&threadID2,NULL,&imprime, &threadParam2);
+    pthread_join(threadID2,NULL); // Esperar a que el hilo threadID2 termine
+
+    exit(EXIT_SUCCESS);
+}
+
+
+
+> 5. ¿Cuáles es el resultado de la actividad?
+
+El resultado de la actividad es un programa que utiliza pthread_join para asegurar que el hilo principal espere a que los hilos threadID1 y threadID2 terminen antes de finalizar la ejecución del programa. Esto garantiza que los trabajos de impresión de los hilos se completen antes de que el programa termine.
+
+> 6. ¿Qué aprendiste de la actividad?
+
+De esta actividad, aprendí la importancia de utilizar pthread_join para sincronizar la finalización de los hilos con el hilo principal en programas de hilos en C. También comprendí cómo garantizar que los hilos completen sus tareas antes de que el programa principal finalice, evitando así problemas de finalización prematura de los hilos.
 
 #### Sesión 2
 
 > 1. ¿Qué tipo de actividad estás evidenciando?
+
+
+
 > 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+
+
+
 > 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
 >    el resultado final de la actividad.
-> 4. ¿Cuáles es el resultado de la actividad?
-> 5. ¿Qué aprendiste de la actividad?
+
+
+
+
+> 5. ¿Cuáles es el resultado de la actividad?
+
+
+
+> 6. ¿Qué aprendiste de la actividad?
+
+
 
 #### Sesión 3
 
