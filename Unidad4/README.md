@@ -87,13 +87,55 @@ a hacer un control de versiones, a enviar el codigo con el control de codigo fue
 
 #### Sesión 2
 
-> 1. ¿Qué tipo de actividad estás evidenciando?
-> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
-> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
->    el resultado final de la actividad.
-> 4. ¿Cuáles es el resultado de la actividad?
-> 5. ¿Qué aprendiste de la actividad?
+¿Qué tipo de actividad estás evidenciando?
 
+Estoy evidenciando una actividad de resolución de problemas relacionada con la concurrencia utilizando hilos en C.
+Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+
+La actividad consiste en corregir un programa que utiliza hilos para imprimir caracteres en paralelo. 
+
+El propósito es identificar y resolver el problema que impide que los caracteres se impriman correctamente. La pregunta a investigar es por qué el programa no produce la salida esperada.
+Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene el resultado final de la actividad.
+El código fuente proporcionado inicialmente es el siguiente:
+c
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+struct threadParam_t
+{
+    char character;
+    int counter;
+};
+
+
+void* imprime(void *parg){
+    struct threadParam_t *pargTmp = (struct threadParam_t *)parg;
+    for(int i = 0; i < pargTmp->counter;i++){
+        printf("%c",pargTmp->character);
+    }
+    return NULL;
+}
+
+
+int main(int argc, char *argv[]){
+    pthread_t threadID1;
+    pthread_t threadID2;
+
+    struct threadParam_t threadParam1 = {'a',30000};
+    struct threadParam_t threadParam2 = {'b',20000};
+
+    pthread_create(&threadID1,NULL,&imprime, &threadParam1);
+    pthread_create(&threadID2,NULL,&imprime, &threadParam2);
+
+    exit(EXIT_SUCCESS);
+}
+
+¿Cuál es el resultado de la actividad?
+El resultado de la actividad, después de realizar las correcciones necesarias, es un programa que utiliza hilos para imprimir caracteres en paralelo de manera efectiva. Esto se logra al agregar la función pthread_join() para asegurarse de que el programa principal espere a que los hilos terminen antes de salir.
+¿Qué aprendiste de la actividad?
+
+De esta actividad, aprendí la importancia de comprender y manejar adecuadamente la concurrencia al trabajar con hilos en C. Es crucial asegurarse de que los hilos completen sus tareas antes de que el programa principal termine para evitar resultados inesperados.
 #### Sesión 3
 
 > 1. ¿Qué tipo de actividad estás evidenciando?
