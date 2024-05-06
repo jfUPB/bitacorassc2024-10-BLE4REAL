@@ -26,7 +26,11 @@ int main(int argc, char *argv[]){
     struct threadParam_t threadParam2 = {'b',20000};
 
     pthread_create(&threadID1,NULL,&imprime, &threadParam1);
+    pthread_join(threadID1,NULL); // Esperar a que el hilo threadID1 termine
+
     pthread_create(&threadID2,NULL,&imprime, &threadParam2);
+    pthread_join(threadID2,NULL); // Esperar a que el hilo threadID2 termine
 
     exit(EXIT_SUCCESS);
 }
+
