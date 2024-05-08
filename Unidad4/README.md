@@ -136,14 +136,90 @@ El resultado de la actividad, después de realizar las correcciones necesarias, 
 ¿Qué aprendiste de la actividad?
 
 De esta actividad, aprendí la importancia de comprender y manejar adecuadamente la concurrencia al trabajar con hilos en C. Es crucial asegurarse de que los hilos completen sus tareas antes de que el programa principal termine para evitar resultados inesperados.
+
+
 #### Sesión 3
 
-> 1. ¿Qué tipo de actividad estás evidenciando?
-> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
-> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
->    el resultado final de la actividad.
-> 4. ¿Cuáles es el resultado de la actividad?
-> 5. ¿Qué aprendiste de la actividad?
+¿Qué tipo de actividad estás evidenciando?
+
+Estoy evidenciando una actividad de programación en C utilizando la biblioteca SDL2 para la creación de hilos y el uso de semáforos para la sincronización entre los hilos.
+
+Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+
+La actividad consiste en aprender a utilizar hilos y semáforos en SDL2 para lograr la sincronización entre procesos y evitar condiciones de carrera en programas multihilo. El propósito es entender cómo funcionan los hilos y los semáforos en SDL2 y cómo se pueden utilizar para crear aplicaciones multihilo robustas y seguras. La pregunta que quiero investigar es cómo crear y utilizar hilos y semáforos en SDL2.
+
+ El resultado final de la actividad está en el último ejemplo proporcionado, donde se utilizan semáforos para sincronizar dos hilos. El código se encuentra a continuación:
+
+¿Cuál es el resultado de la actividad?
+
+El resultado de la actividad es un programa en C que utiliza la biblioteca SDL2 para crear dos hilos y sincronizarlos mediante el uso de un semáforo. Uno de los hilos modifica una variable compartida, mientras que el otro hilo la lee después de que el primer hilo haya terminado de modificarla.
+
+¿Qué aprendiste de la actividad?
+
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_thread.h>
+#include <stdio.h>
+
+SDL_sem *semaphore;
+int sharedData = 0;
+
+// Función que ejecutará el primer hilo
+int ThreadFunction1(void *data) {
+    // Realiza algún trabajo
+    SDL_Delay(1000);
+
+    // Bloquea el semáforo
+    SDL_SemWait(semaphore);
+
+    // Modifica la variable compartida
+    sharedData = 1;
+
+    // Libera el semáforo
+    SDL_SemPost(semaphore);
+
+    return 0;
+}
+
+// Función que ejecutará el segundo hilo
+int ThreadFunction2(void *data) {
+    // Realiza algún trabajo
+    SDL_Delay(2000);
+
+    // Bloquea el semáforo
+    SDL_SemWait(semaphore);
+
+    // Lee la variable compartida
+    printf("El valor de la variable compartida es: %d\n", sharedData);
+
+    // Libera el semáforo
+    SDL_SemPost(semaphore);
+
+    return 0;
+}
+
+int main() {
+    // Inicializar SDL
+    SDL_Init(SDL_INIT_EVERYTHING);
+
+    // Crear un semáforo
+    semaphore = SDL_CreateSemaphore(1);
+
+    // Crear hilos
+    SDL_Thread *thread1 = SDL_CreateThread(ThreadFunction1, "Thread1", NULL);
+    SDL_Thread *thread2 = SDL_CreateThread(ThreadFunction2, "Thread2", NULL);
+
+    // Esperar a que los hilos terminen
+    SDL_WaitThread(thread1, NULL);
+    SDL_WaitThread(thread2, NULL);
+
+    // Limpiar SDL
+    SDL_DestroySemaphore(semaphore);
+    SDL_Quit();
+
+    return 0;
+}
+
+De esta actividad, aprendí cómo utilizar hilos y semáforos en SDL2 para lograr la sincronización entre procesos en programas multihilo. Entendí cómo evitar condiciones de carrera al controlar el acceso a recursos compartidos utilizando semáforos. También comprendí cómo crear y gestionar hilos en SDL2 para realizar tareas concurrentes en una aplicación.
 
 ### Semana 15
 
@@ -209,27 +285,69 @@ De esta actividad, aprendí la importancia de utilizar pthread_join para sincron
 
 #### Sesión 2
 
-> 1. ¿Qué tipo de actividad estás evidenciando?
+1. ¿Qué tipo de actividad estás evidenciando?
 
+Estoy respondiendo a una solicitud para proporcionar un ejemplo de cómo agregar reproducción de audio a un código en C que implementa un juego simple utilizando la biblioteca SDL.
 
+2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
 
-> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+La actividad consiste en modificar la función play_audio del código existente para reproducir un tono simple en lugar de cargar un archivo de audio desde el disco. El propósito es demostrar cómo usar SDL para generar y reproducir audio en lugar de cargarlo desde un archivo externo. La pregunta que se investiga es cómo integrar la reproducción de audio en un juego SDL utilizando audio generado dinámicamente.
 
+3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene el resultado final de la actividad.
 
+#include <SDL.h>
+#include <stdio.h>
 
-> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
->    el resultado final de la actividad.
+#define SAMPLE_RATE 44100
+#define AMPLITUDE 28000
+#define FREQUENCY 440
 
+void play_audio(void) {
+    SDL_AudioSpec want, have;
+    SDL_AudioDeviceID audioDevice;
 
+    SDL_memset(&want, 0, sizeof(want)); /* Cero la estructura */
+    want.freq = SAMPLE_RATE;
+    want.format = AUDIO_S16SYS;
+    want.channels = 1;
+    want.samples = 2048;
+    want.callback = NULL; /* No necesitamos una función de devolución de llamada, así que la dejamos como NULL */
 
+    audioDevice = SDL_OpenAudioDevice(NULL, 0, &want, &have, 0);
+    if (audioDevice == 0) {
+        printf("Unable to open audio device: %s\n", SDL_GetError());
+        return;
+    }
 
-> 5. ¿Cuáles es el resultado de la actividad?
+    float period = (float)SAMPLE_RATE / FREQUENCY;
+    Uint8 *audioBuffer = (Uint8 *)malloc(have.samples * sizeof(Uint8));
+    if (audioBuffer == NULL) {
+        printf("Unable to allocate audio buffer.\n");
+        SDL_CloseAudioDevice(audioDevice);
+        return;
+    }
 
+    for (int i = 0; i < have.samples; i++) {
+        float sample = AMPLITUDE * sin(2 * M_PI * i / period);
+        Sint16 val = (Sint16)sample;
+        audioBuffer[i * 2] = val & 0xFF;
+        audioBuffer[i * 2 + 1] = (val >> 8) & 0xFF;
+    }
 
+    SDL_QueueAudio(audioDevice, audioBuffer, have.samples * sizeof(Uint8));
+    SDL_PauseAudioDevice(audioDevice, 0); /* Iniciar la reproducción de audio */
+    SDL_Delay(1000); /* Esperar un segundo antes de detener la reproducción */
+    SDL_CloseAudioDevice(audioDevice);
+    free(audioBuffer);
+}
 
-> 6. ¿Qué aprendiste de la actividad?
+4. ¿Cuál es el resultado de la actividad?
 
+El resultado de la actividad es una función play_audio modificada que reproduce un tono simple en lugar de cargar un archivo de audio desde el disco. Este tono se genera dinámicamente utilizando fórmulas matemáticas y se reproduce utilizando SDL.
 
+5. ¿Qué aprendiste de la actividad?
+
+De esta actividad, aprendí cómo generar y reproducir audio dinámicamente en SDL utilizando fórmulas matemáticas para crear un tono simple. También reforcé mi comprensión de cómo trabajar con la biblioteca SDL para manejar la reproducción de audio en un contexto de juego.
 
 #### Sesión 3
 
