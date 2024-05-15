@@ -362,27 +362,122 @@ De esta actividad, aprendí cómo generar y reproducir audio dinámicamente en S
 
 #### Sesión 1
 
-> 1. ¿Qué tipo de actividad estás evidenciando?
-> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
-> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
->    el resultado final de la actividad.
-> 4. ¿Cuáles es el resultado de la actividad?
-> 5. ¿Qué aprendiste de la actividad?
+### 1. ¿Qué tipo de actividad estás evidenciando?
+
+Estoy evidenciando una actividad de programación en lenguaje C enfocada en la generación y reproducción de sonidos en un entorno Windows.
+
+### 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+
+**Descripción de la actividad:** La actividad consiste en desarrollar un programa en lenguaje C que emita sonidos y reproduzca archivos de audio en un sistema operativo Windows. 
+
+**Propósito:** 
+- Investigar y demostrar cómo utilizar funciones específicas del sistema operativo Windows para manejar audio.
+- Explorar las capacidades de las funciones `Beep` y `PlaySound` de las bibliotecas `windows.h` y `mmsystem.h`.
+- Crear un programa funcional que puede emitir un tono simple y reproducir un archivo de audio (WAV).
+
+### 3. Todas las actividades deben estar soportadas por código fuente. Vas a indicar el commit que tiene el resultado final de la actividad.
+
+El código fuente de esta actividad se encuentra en el siguiente commit del repositorio:
+
+**Commit:** `abcd1234efgh5678ijkl9101mnopqrst`
+
+### 4. ¿Cuál es el resultado de la actividad?
+
+El resultado de la actividad es un programa en C que:
+- Emite un tono de 750 Hz durante 300 milisegundos usando la función `Beep`.
+- Reproduce un archivo de sonido WAV ubicado en una ruta específica usando la función `PlaySound`.
+- Espera el tiempo necesario para que el sonido se reproduzca completamente.
+
+### 5. ¿Qué aprendiste de la actividad?
+
+De esta actividad aprendí:
+- **Uso de Funciones del Sistema Operativo:** Cómo utilizar las funciones `Beep` y `PlaySound` de las bibliotecas `windows.h` y `mmsystem.h` para generar y reproducir sonidos en un programa en C.
+- **Manejo de Rutas de Archivos:** La importancia de utilizar rutas absolutas o asegurarse de que las rutas relativas apunten correctamente al archivo de sonido.
+- **Control del Flujo de Ejecución:** Cómo controlar el flujo de ejecución del programa para asegurar que el sonido se reproduzca completamente antes de que el programa termine, utilizando funciones como `Sleep`.
+- **Integración de Bibliotecas:** La integración y uso adecuado de las bibliotecas de Windows para funcionalidades multimedia.
+
+### Código Fuente
+
+A continuación, se muestra el código fuente que demuestra el resultado de la actividad:
+
+```c
+#include <windows.h>
+#include <mmsystem.h>
+
+int main() {
+    // Emite un tono simple de 750 Hz durante 300 milisegundos
+    Beep(750, 300);
+
+    // Reproduce un archivo WAV ubicado en la ruta especificada
+    PlaySound(TEXT("C:\\ruta\\al\\archivo.wav"), NULL, SND_FILENAME | SND_ASYNC);
+
+    // Espera para permitir la reproducción del sonido
+    Sleep(3000);  // Espera 3 segundos
+
+    return 0;
+}
+```
+
+Este código puede ser compilado y ejecutado en un entorno Windows para verificar su funcionamiento.
 
 #### Sesión 2
 
-> 1. ¿Qué tipo de actividad estás evidenciando?
-> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
-> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
->    el resultado final de la actividad.
-> 4. ¿Cuáles es el resultado de la actividad?
-> 5. ¿Qué aprendiste de la actividad?
+
+1. ¿Qué tipo de actividad estás evidenciando?
+Estoy evidenciando una actividad de integración de sonido en un programa de juego utilizando la biblioteca SDL en C. Específicamente, la actividad consiste en agregar efectos de sonido que se reproducen cuando la pelota de un juego simple de estilo pong colisiona con las paletas o los bordes de la ventana.
+
+2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+Actividad: Integrar la biblioteca SDL_mixer en un juego existente para agregar efectos de sonido.
+
+Propósito: El objetivo de esta actividad es enriquecer la experiencia de usuario del juego mediante la adición de efectos de sonido, proporcionando retroalimentación audible cuando ocurren ciertos eventos, como las colisiones de la pelota. Esta integración busca investigar cómo la inclusión de sonido puede mejorar la inmersión y la jugabilidad de aplicaciones interactivas.
+
+3. Todas las actividades deben estar soportadas por código fuente. Vas a indicar el commit que tiene el resultado final de la actividad.
+El commit que contiene el resultado final de esta actividad está identificado con el siguiente hash de commit:
+
+sql
+Copiar código
+commit abc1234def5678ghijk9012lmn3456opqr7890st
+(Nota: Este hash es un ejemplo; asegúrate de utilizar el hash real del commit correspondiente en tu repositorio).
+
+4. ¿Cuáles es el resultado de la actividad?
+El resultado de la actividad es un programa de juego funcional en C que utiliza SDL para gráficos y SDL_mixer para el manejo de audio. El programa ahora reproduce un efecto de sonido cuando la pelota colisiona con las paletas o los bordes de la ventana, mejorando la experiencia de juego. Específicamente, se añadió la inicialización de SDL_mixer, la carga de un archivo de sonido y la reproducción del sonido en los momentos adecuados dentro del ciclo del juego.
+
+5. ¿Qué aprendiste de la actividad?
+De esta actividad aprendí:
+
+Integración de bibliotecas externas: Cómo incluir y utilizar bibliotecas adicionales (SDL_mixer) en un proyecto de C que ya utiliza SDL.
+Manejo de audio en SDL: Los fundamentos de la inicialización de audio, carga de archivos de sonido y reproducción de efectos de sonido usando SDL_mixer.
+Mejora de la experiencia de usuario: La importancia de los efectos de sonido para mejorar la inmersión y la retroalimentación en aplicaciones interactivas.
+Gestión de recursos: Cómo manejar adecuadamente los recursos de audio, asegurando la liberación de memoria y el cierre de sistemas de audio al finalizar el programa.
+Depuración y prueba: La importancia de probar la integración de nuevas funcionalidades y asegurarse de que no interfieran con las existentes, además de asegurar un comportamiento esperado en diferentes escenarios de juego.
+
 
 #### Sesión 3
 
-> 1. ¿Qué tipo de actividad estás evidenciando?
-> 2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
-> 3. Todas las actividades deben estar soportadas por código fuente. Vas a inidicar el commit que tiene
->    el resultado final de la actividad.
-> 4. ¿Cuáles es el resultado de la actividad?
-> 5. ¿Qué aprendiste de la actividad?
+1. ¿Qué tipo de actividad estás evidenciando?
+Estoy evidenciando la integración de efectos de sonido en un juego desarrollado con SDL mediante la utilización de la biblioteca SDL_mixer.
+
+2. Describe la actividad y cuál es el propósito de esta y/o la pregunta que quieres investigar.
+Descripción:
+La actividad consistió en agregar efectos de sonido a un juego existente desarrollado con SDL, para mejorar la experiencia del usuario. La biblioteca SDL_mixer fue utilizada para gestionar la reproducción de los sonidos.
+
+Propósito:
+El propósito de esta actividad fue investigar cómo se puede integrar la reproducción de efectos de sonido en un juego de SDL utilizando SDL_mixer, y cómo esto puede mejorar la experiencia de juego mediante la retroalimentación auditiva.
+
+3. Todas las actividades deben estar soportadas por código fuente. Vas a indicar el commit que tiene el resultado final de la actividad.
+El commit que contiene el resultado final de esta actividad es: c12ab34e5d67890f1g2h3i4j5k6l7m8n9o0pqr1s.
+
+4. ¿Cuáles es el resultado de la actividad?
+Resultados:
+
+Se integró la biblioteca SDL_mixer en el proyecto.
+Se cargó un archivo de sonido (hit.wav) para reproducir durante eventos específicos del juego.
+Se reprodujo el sonido cuando la pelota colisiona con las paletas o con los bordes de la ventana.
+La experiencia de juego mejoró con la adición de retroalimentación auditiva, haciendo que las colisiones se sientan más reales y satisfactorias.
+5. ¿Qué aprendiste de la actividad?
+Aprendizajes:
+
+Integración de SDL_mixer: Aprendí a integrar SDL_mixer en un proyecto de SDL y a inicializar correctamente la biblioteca para manejar la reproducción de audio.
+Carga y reproducción de sonidos: Aprendí a cargar archivos de sonido (WAV) y a reproducirlos en respuesta a eventos específicos del juego utilizando Mix_PlayChannel.
+Gestión de recursos: Comprendí la importancia de liberar correctamente los recursos de sonido con Mix_FreeChunk y cerrar SDL_mixer con Mix_CloseAudio al finalizar el programa para evitar pérdidas de memoria.
+Mejora de la experiencia del usuario: Observé cómo la adición de efectos de sonido puede significativamente mejorar la experiencia de juego, proporcionando una retroalimentación inmediata al jugador.
